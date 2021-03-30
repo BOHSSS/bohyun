@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="keywords" content="에뛰드 반응형 , 반응형, 에뛰드, pascucci, adaptive web" />
+   <meta name="description" content="에뛰드 반응형 웹 페이지 입니다." />
+   <meta name="Author" content="사보현" />
+   <title>ETUDE</title>
+   <link rel="stylesheet" href="css/style.css"/>
+   <link rel="stylesheet" href="css/media.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <script src="js/jquery.easing.1.3.min.js"></script>
+   <script src="js/jquery-1.7.1.min.js"></script>
+   <script src="js/jquery-1.7.2.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/more.js"></script>
+   <script src="js/subslide.js"></script>
+</head>
+
+<body>
+   <header id="header_wrap">
+      <div id="header_fixed">
+         <div id="header">
+            <div id="gnb">
+               <ul class="top_gnb">
+                  <li><a href="#">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">주문/배송조회</a></li>
+                  <li><a href="#"></a></li>
+               </ul>
+            </div>
+            <nav id="top_menu_wrap">
+               <h1 class="logo">
+                  <a href="index.html"><img src="img/img_logo.png" width="153" height="60" alt="logo" /></a>
+               </h1>
+               <div class="m_nav_btn">
+                  <a href="#"><img src="img/m_nav_btn.png" width="26" height="24" alt="m_btn"></a>
+               </div>
+
+               <!--모바일 메뉴-->
+               <div id="mo_nav">
+                  <div class="mo_close">
+                     <a href="#"><img src="img/icon_close_m.png" alt="닫기"></a>
+                  </div>
+                  <div class="mo_bg_nav">
+                     <div class="mo_top_gnb">
+                        <div class="top_gnb">
+                           <p>로그인이 필요합니다.</p>
+                           <div class="m_logbox">
+                              <div class="m_join">
+                                 <a href="#">회원가입</a>
+                              </div>
+                              <div class="m_login">
+                                 <a href="#">로그인</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <ul class="mo_depth1">
+                        <li class="border">
+                           <div><a href="#">상품</a></div>
+                           <ul class="mo_depth2">
+                              <li><a href="#">신상품</a></li>
+                              <li><a href="#">베스트</a></li>
+                              <li><a href="#">sns</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div><a href="#">이벤트</a></div>
+                           <ul class="mo_depth2">
+                              <li><a href="#">진행중인 이벤트</a></li>
+                              <li><a href="#">종료된 이벤트</a></li>
+                              <li><a href="#">당첨자 발표</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div><a href="#">쿠폰혜택</a></div>
+                           <ul class="mo_depth2">
+                              <li><a href="#">내 쿠폰</a></li>
+                              <li><a href="#">나만의 혜택</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div><a href="#">셀렉샵</a></div>
+                           <ul class="mo_depth2">
+                              <li><a href="#">브랜드 안내</a></li>
+                              <li><a href="#">매장 찾기</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div><a href="#">컬러팩토리</a></div>
+                           <ul class="mo_depth2">
+                              <li><a href="#">컬러팩토리 안내</a></li>
+                              <li><a href="#">예약 안내</a></li>
+                              <li><a href="#">서비스 매장 보기</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <div><a href="#">RIGHT NOW!</a></div>
+                           <ul class="mo_depth2">
+                              <!-- <li><a href="#">절차안내</a></li>
+                              <li><a href="#">추천매장</a></li>
+                              <li><a href="#">가맹점문의</a></li>
+                              <li><a href="#">FAQ</a></li> -->
+                           </ul>
+                        </li>
+                        <li class="color">
+                           <div><a href="#">패밀리사이트</a></div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--모바일 검색-->
+               <div class="mo_search">
+                  <form action="#">
+                     <input type="text" placeholder="봄맞이 페이스 제품 BEST 최대 40%">
+                     <button class="search_btn">찾기</button>
+                  </form>
+               </div>
+
+               <!--피씨 메뉴-->
+               <div class="nav">
+                  <div class="drop_bg"><span></span></div>
+                  <div class="bg_menu">
+                     <ul class="depth1">
+                        <li><a href="#"><span>상품</span></a>
+                           <ul class="depth2">
+                              <li><a href="#">신상품</a></li>
+                              <li><a href="#">베스트</a></li>
+                              <li><a href="#">SNS</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#"><span>이벤트</span></a>
+                           <ul class="depth2">
+                              <li><a href="#">진행중인 이벤트</a></li>
+                              <li><a href="#">종료된 이벤트</a></li>
+                              <li><a href="#">당첨자 발표</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#"><span>쿠폰혜택</span></a>
+                           <ul class="depth2">
+                              <li><a href="#">내 쿠폰</a></li>
+                              <li><a href="#">나만의 혜택</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="#"><span>셀렉샵</span></a>
+                           <ul class="depth2">
+                              <li><a href="#">브랜드 안내</a></li>
+                              <li><a href="#">매장찾기</a></li>
+                           </ul>
+                        </li>
+                        <li class="li_last"><a href="#"><span>컬러팩토리</span></a>
+                           <ul class="depth2">
+                              <li><a href="#">컬러팩토리 안내</a></li>
+                              <li><a href="#">예약 안내</a></li>
+                              <li><a href="#">서비스 매장 보기</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <span class="right_now">
+                                 <img src="img/gnb_menu.png" width="120" height="25" alt="right_now">
+                              </span>
+                           </a>
+                           <ul class="depth2">
+                              <li class="sub_right_now"><a href="#"><img src="img/right_now.jpg" width="150"
+                                       height="130" alt="right_now"></a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div> <!-- class="nav" -->
+               
+            </nav> <!-- id="top_menu_wrap" -->
+         </div> <!-- id="header" -->
+      </div><!--  id="header_fixed" -->
+   </header>
+
+   <section>
+
+      <!-- top 버튼 -->
+      <div id="top_btn">
+         <a href="#">
+            <img src="img/top_btn.png" width="60" height="60" alt="top_btn">
+         </a>
+      </div>
+
+      <!-- 슬라이드 배너 -->
+      <div id="main_img">
+         <div id="slide_btn">
+            <div class="slide_num">
+               <ul>
+                  <li class="on"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+               </ul>
+            </div>
+            <div class="slide_stop">
+               <ul>
+                  <li class="sd_stop"><a href="#">stop</a></li>
+                  <li class="sd_start"><a href="#">play</a></li>
+               </ul>
+            </div>
+         </div>
+         <div id="slide_img_wrap1">
+            <div class="slide_img">
+               <div class="pc_main">
+                  <ul>
+                     <li class="visual_0"><a href="#">배너이미지1</a></li>
+                     <li class="visual_1"><a href="#">배너이미지2</a></li>
+                     <li class="visual_2"><a href="#">배너이미지3</a></li>
+                     <li class="visual_3"><a href="#">배너이미지4</a></li>
+                     <li class="visual_4"><a href="#">배너이미지5</a></li>
+                     <li class="visual_5"><a href="#">배너이미지6</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--공지사항-->
+      <div id="m_main_cont0">
+         <div id="m_cont0_list">
+            <div class="m_list0">
+               <h3>인기검색어</h3>
+               <ul class="m_sub_text">
+                  <li style="top:0;">  
+                     <a href="#" class="data"> <span>1 </span> 에뛰드 롸잇나우</a>
+                  </li>
+                  <li>
+                     <a href="#" class="data"> <span>2 </span> 당일배송</a>
+                  </li>
+                  <li>
+                     <a href="#" class="data"> <span>3 </span> 에뛰드 세일</a>
+                  </li>
+               </ul>
+               <a href="#" class="plus">
+                  더보기
+               </a>
+            </div>
+         </div>
+      </div>
+      <!--실시간 인기상품-->
+      <div id="main_cont1_wrap">
+         <div class="cont1_tit">
+            <h2>실시간 인기상품</h2>
+         </div>
+         <div class="tabMenu">
+             <div class="tabSet">
+                 <div class="tabs">
+                     <aside id="main_aside">
+                         <input type="radio" id="first" name="tab" checked>
+                         <input type="radio" id="second" name="tab">
+                         <input type="radio" id="third" name="tab">
+                         <input type="radio" id="fourth" name="tab">
+                         <section class="buttons">
+                             <label for="first">전체</label>
+                             <label for="second">기초</label>
+                             <label for="third">색조</label>
+                             <label for="fourth">바디</label>
+                         </section>
+                         <div id="box1">
+                           <div class="cont1_list" id="play1">
+                              <div class="list1 cont1_list1">
+                                 <div class="rank">
+                                    <img src="img/rank1.png" alt="rank1">
+                                    <h1>1</h1>
+                                    <div class="text">
+                                       <h3>플레이 컬러 아이즈 #밀키뉴이어</h3>
+                                       <p>
+                                          <span class="str">15,000원 </span>
+                                          <span class="ori">25,000원</span>
+                                          <span class="per">40%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_list2 s_padding_none">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank2">
+                                    <h1>2</h1>
+                                    <div class="text">
+                                       <h3>룩 앳 마이 아이즈 벨벳</h3>
+                                       <p>
+                                          <span class="str">4,500원</span>
+                                          <span class="ori">5,500원</span>
+                                          <span class="per">20%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_list3">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank3">
+                                    <h1>3</h1>
+                                    <div class="text">
+                                       <h3>밀크 톤업 베이스 SPF30/PA+++</h3>
+                                       <p>
+                                          <span class="str">15,000원</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_list4">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank4">
+                                    <h1>4</h1>
+                                    <div class="text">
+                                       <h3>순정 약산성 6.5 휩 클렌저</h3>
+                                       <p>
+                                          <span class="str">9,100원</span>
+                                          <span class="ori">13,000원</span>
+                                          <span class="per">30%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_list5">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank5">
+                                    <h1>5</h1>
+                                    <div class="text">
+                                       <h3>닥터마스카라 픽서 래쉬</h3>
+                                       <p>
+                                          <span class="str">3,000원</span>
+                                          <span class="ori">6,000원</span>
+                                          <span class="per">50%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                         </div>
+                         <div id="box2">
+                           <div class="cont1_list" id="play2">
+                              <div class="list1 cont1_2_list1">
+                                 <div class="rank">
+                                    <img src="img/rank1.png" alt="rank1">
+                                    <h1>1</h1>
+                                    <div class="text">
+                                       <h3>선프라이즈 내추럴 코렉터 SPF50+/PA+++</h3>
+                                       <p>
+                                          <span class="str">7,600원</span>
+                                          <span class="ori">9,500원</span>
+                                          <span class="per">20%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_2_list2">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>2</h1>
+                                    <div class="text">
+                                       <h3>수분가득 콜라겐 크림 75ml</h3>
+                                       <p>
+                                          <span class="str">20,000원</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_2_list3">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>3</h1>
+                                    <div class="text">
+                                       <h3>순정 약산성 5.5 진정 토너</h3>
+                                       <p>
+                                          <span class="str">17,000원</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_2_list4">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>4</h1>
+                                    <div class="text">
+                                       <h3>더블 래스팅 파운데이션 SPF35/PA++</h3>
+                                       <p>
+                                          <span class="str">5,600원~</span>
+                                          <span class="ori">8,000원</span>
+                                          <span class="per">30%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_2_list5">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>5</h1>
+                                    <div class="text">
+                                       <h3>순정 센텔라 약산성 진정 토너 200ml</h3>
+                                       <p>
+                                          <span class="str">16,600원</span>
+                                          <span class="ori">17,000원</span>
+                                          <span class="per">5%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="box3">
+                           <div class="cont1_list" id="play3">
+                              <div class="list1 cont1_3_list1">
+                                 <div class="rank">
+                                    <img src="img/rank1.png" alt="rank1">
+                                    <h1>1</h1>
+                                    <div class="text">
+                                       <h3>플레이 컬러 아이즈 #밀키뉴이어</h3>
+                                       <p>
+                                          <span class="str">15,000원 </span>
+                                          <span class="ori">25,000원</span>
+                                          <span class="per">40%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_3_list2 m_margin">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>2</h1>
+                                    <div class="text">
+                                       <h3>룩 앳 마이 아이즈 벨벳</h3>
+                                       <p>
+                                          <span class="str">4,500원</span>
+                                          <span class="ori">5,500원</span>
+                                          <span class="per">20%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_3_list3">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>3</h1>
+                                    <div class="text">
+                                       <h3>블링블링 아이스틱</h3>
+                                       <p>
+                                          <span class="str">3,600원</span>
+                                          <span class="ori">4,000원</span>
+                                          <span class="per">10%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_3_list4">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>4</h1>
+                                    <div class="text">
+                                       <h3>러블리 쿠키 블러셔</h3>
+                                       <p>
+                                          <span class="str">4,200원</span>
+                                          <span class="ori">6,000원</span>
+                                          <span class="per">30%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_3_list5">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>5</h1>
+                                    <div class="text">
+                                       <h3>룩 앳 마이 아이즈 브리즈</h3>
+                                       <p>
+                                          <span class="str">4,000원 ~</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="box4">
+                           <div class="cont1_list" id="play4">
+                              <div class="list1 cont1_4_list1">
+                                 <div class="rank">
+                                    <img src="img/rank1.png" alt="rank1">
+                                    <h1>1</h1>
+                                    <div class="text">
+                                       <h3>트루뷰티 퍼퓸 핸드크림 50ml</h3>
+                                       <p>
+                                          <span class="str">6,900원~</span>
+                                          <span class="ori">7,900원</span>
+                                          <span class="per">12%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_4_list2">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>2</h1>
+                                    <div class="text">
+                                       <h3>실크 스카프 홀로그램 헤어 세럼</h3>
+                                       <p>
+                                          <span class="str">5,200원</span>
+                                          <span class="ori">6,500원</span>
+                                          <span class="per">20%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_4_list3">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>3</h1>
+                                    <div class="text">
+                                       <h3>쁘띠비쥬 코튼스노우 바디워시 </h3>
+                                       <p>
+                                          <span class="str">8,500원</span>
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_4_list4">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>4</h1>
+                                    <div class="text">
+                                       <h3>웨어 유어 모먼트 바디 미스트 #오늘의 날씨</h3>
+                                       <p>
+                                          <span class="str">5,600원</span>
+                                          <span class="ori">7,000원</span>
+                                          <span class="per">20%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="list cont1_4_list5">
+                                 <div class="rank2">
+                                    <img src="img/rank2.png" alt="rank1">
+                                    <h1>5</h1>
+                                    <div class="text">
+                                       <h3>에뛰드 미싱유 핸드크림</h3>
+                                       <p>
+                                          <span class="str">3,600원</span>
+                                          <span class="ori">4,500원</span>
+                                          <span class="per">20%</span>
+                                       </p>
+                                       <img src="img/sale.png" alt="sale">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                  </div>
+               </div><!-- id="notice" -->
+         </div>
+      </div>
+
+      <!--에뛰드 베스트-->
+      <div id="main_cont2_wrap">
+         <div id="main_cont2">
+            <div id="cont2_wrap">
+               <div class="cont2_tit">
+                  <h2>#ETUDE_BEST</h2>
+                  <p>에뛰드의 베스트셀러 제품을 한자리에서 만나보세요!</p>
+               </div>
+               <div class="cont2_list">
+                  <ul>
+                     <li class="cont2_list1 gray">
+                        <a href="#">
+                           <img src="img/best1.png" width="208" height="208" alt="cake1">
+                        </a>
+                        <h3>#텁텁함 ZERO</h3>
+                        <span>1</span>
+                     </li>
+                     <li class="cont2_list2 pink">
+                        <a href="#">
+                           <img src="img/best2.png" width="208" height="208" alt="cake2">
+                        </a>
+                        <h3>#브로우펜슬</h3>
+                     </li>
+                     <li class="cont2_list3 gray">
+                        <a href="#">
+                           <img src="img/best3.png" width="208" height="208" alt="cake3">
+                        </a>
+                        <h3>#클렌징오일</h3>
+                     </li>
+                     <li class="cont2_list4 pink">
+                        <a href="#">
+                           <img src="img/best4.png" width="208" height="208" alt="cake4">
+                        </a>
+                        <h3>#애교살</h3>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!--main_cont2-->
+         <!--더보기-->
+         <div id="loadmore" class="hide">
+            <div id="cont2_wrap">
+               <div class="cont2_list">
+                  <ul class="cf">
+                     <li class="cont2_list5 pink">
+                        <a href="#">
+                           <img src="img/best5.png" width="208" height="208" alt="best5">
+                        </a>
+                        <h3>#워터프루프</h3>
+                     </li>
+                     <li class="cont2_list6 gray">
+                        <a href="#">
+                           <img src="img/best6.png" width="208" height="208" alt="best6">
+                        </a>
+                        <h3>#음영섀도우</h3>
+                     </li>
+                     <li class="cont2_list7 pink">
+                        <a href="#">
+                           <img src="img/best7.png" width="208" height="208" alt="best7">
+                        </a>
+                        <h3>#이중코튼시트</h3>
+                     </li>
+                     <li class="cont2_list8 gray">
+                        <a href="#">
+                           <img src="img/best8.png" width="208" height="208" alt="best8">
+                        </a>
+                        <h3>#세미매트파운데이션</h3>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <button type="button" class="loadmore">LOAD MORE</button>
+         <button type="button" class="close">CLOSE</button>
+      </div>
+
+      <!-- 이달의 테마 -->
+      <div id="main_cont3">
+         <div id="cont3_wrap">
+            <div class="cont3">
+               <h2>이달의 테마</h2>
+               <div class="theme_wrap">
+                  <div class="plays">
+                     <div class="play" id="play1">
+                        <ul class="slide1 cf">
+                           <li class="fl"><img src="img/theme1.jpg" alt="theme1" /></li>
+                           <li class="fl"><img src="img/theme2.jpg" alt="theme2" /></li>
+                           <li class="fl"><img src="img/theme3.jpg" alt="theme3" /></li>
+                           <li class="fl"><img src="img/theme4.jpg" alt="theme4" /></li>
+                           <li class="fl"><img src="img/theme5.jpg" alt="theme5" /></li>
+                           <li class="fl"><img src="img/theme6.jpg" alt="theme6" /></li>
+                        </ul>
+                        <div class="prev1_2">
+                           <img src="img/left_arrow.png" class="prev1_1" width="30" height="50" alt="left1" />
+                        </div>
+                        <div class="next1_2">
+                           <img src="img/right_arrow.png" class="next1_1" width="30" height="50" alt="right1" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- sns -->
+      <div id="main_cont4">
+         <div id="cont4_wrap">
+            <div class="cont4_tit">
+               <h2>#ETUDE_INSTA</h2>
+               <p>반짝이는 일상, 에뛰드 인스타그램</p>
+            </div>
+            <div class="cont4_sns">
+               <ul>
+                  <li>
+                     <a href="https://www.instagram.com/p/CMi4NJPDVUX/" target="_blank">
+                        <img src="img/sns1.png" alt="snsimg1" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/p/CMgRZXYDqZW/" target="_blank">
+                        <img src="img/sns2.png" alt="snsimg2" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li class="m_padding_none">
+                     <a href="https://www.instagram.com/p/CMbHH4lDNuJ/" target="_blank">
+                        <img src="img/sns3.png" alt="snsimg3" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li class="padding_none">
+                     <a href="https://www.instagram.com/p/CMdq0P_DvZP/" target="_blank">
+                        <img src="img/sns4.png" alt="snsimg4" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li class="m_padding_none">
+                     <a href="https://www.instagram.com/p/CMYiBU_Fx7s/" target="_blank">
+                        <img src="img/sns5.png" alt="snsimg5" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/p/CMV9PVkAgUQ/" target="_blank">
+                        <img src="img/sns6.png" alt="snsimg6" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li class="m_padding_none">
+                     <a href="https://www.instagram.com/p/CMQyisrjduJ/" target="_blank">
+                        <img src="img/sns7.png" alt="snsimg7" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+                  <li class="padding_none">
+                     <a href="#" target="_blank">
+                        <img src="img/sns8.png" alt="snsimg8" class="cont5_img1" width="290" height="290">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <!-- 컬러팩토리 -->
+      <div id="main_cont5">
+         <div id="cont5_wrap">
+            <div class="cont5 cont5-1">
+               <h2><span>컬러팩토리</span>가 뭔데?</h2>
+               <p>나만의 퍼스널 컬러를 진단받고 그에 맞는 단하나뿐인
+                  화장품 조합을 만들 수 있는 컬러 컨설팅 공간입니다.</p>
+               <div class="cont5_btn">
+                  <a href="#">컬러팩토리 안내</a>
+               </div>
+            </div>
+            <div class="cont5 cont5-2">
+               <h2><span>RIGHT NOW</span> 득템찬스</h2>
+               <p>에뛰드 오늘의 핫딜을 놓치지 마세요!<br>
+                  <span>* 위 프로모션은 온라인에서만 진행되는 회원전용 이벤트입니다.</span>
+               </p>
+               <div class="cont5_btn">
+                  <a href="#">RIGHT NOW!</a>
+               </div>
+            </div>
+            <div class="cont5 cont5-3">
+               <h2>무엇을 도와드릴까요?</h2>
+               <h1> 080-022-2285</h1>
+               <p>평일 11:00 ~16:00 <br>점심 12:00 ~13:00, 토/일/공휴일 휴무</p>
+               <div class="cont5_btn">
+                  <a href="#">고객센터 가기</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- 매장 찾기 -->
+      <div id="main_cont6">
+         <div id="cont6_wrap">
+            <div class="cont6_store">
+               <img src="img/store.png" alt="store">
+            </div>
+            <div class="cont6_text">
+               <div class="cont6_tit">
+                  <h2>서비스 매장 찾기</h2>
+                  <p>가까운 컬러팩토리 서비스 매장을 찾아보세요.</p>
+               </div>
+               <div class="store_search">
+                  <form action="#none">
+                     <input type="text" placeholder="매장명 또는 주소를 입력하세요.">
+                     <button class="search_btn">찾기</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+   <footer>
+      <div id="footer_wrap">
+         <ul class="bottom_nav">
+            <li><a href="#none">이용약관</a></li>
+            <li class="color"><a href="#none">개인정보처리방침</a></li>
+            <li><a href="#none">영상정보처리기기운영.관리방침</a></li>
+            <li><a href="#none">이메일무단수집거부</a></li>
+            <li><a href="#none">전자공고</a></li>
+            <li><a href="#none">매장개설문의</a></li>
+         </ul>
+         <div class="foot">
+            <div class="f_logo">
+               <img src="img/footer_logo.png" width="140" height="55" alt="f_logo">
+            </div>
+            <!--공지사항-->
+            <div id="main_cont0">
+               <div id="cont0_list">
+                  <div class="list0">
+                     <h3>공지사항</h3>
+                     <ul class="sub_text">
+                        <li style="top:0;">
+                           <a href="#" class="data">2021년 에뛰드 핑크 멤버십제도 변경 안내</a>
+                        </li>
+                        <li>
+                           <a href="#" class="data">에뛰드 이용약관이 변경됩니다.</a>
+                        </li>
+                        <li>
+                           <a href="#" class="data"> 코로나19 확산에 따른 고객상담실 운영 안내</a>
+                        </li>
+                     </ul>
+                     <a href="#" class="plus">
+                        더보기
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!--copyright-->
+            <p class="copy_info">
+               <span>서울특별시 용산구 한강대로 100(한강로2가)</span>
+               <span>FAX.0505-073-0210</span>
+               <span class="foot_display">고객상담센터 080-731-2027</span>
+            </p>
+            <p class="last_bottom">
+               COPYRIGHT &copy; 2021 ETUDE RENEWAL. ALL RIGHT RESERVED.
+            </p>
+
+            <div class="family_site">
+               <a href="#none">페밀리 사이트</a>
+               <span><img src="img/foot_img1.jpg" width="84" height="31" alt="award"></span>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

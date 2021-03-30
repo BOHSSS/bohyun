@@ -1,0 +1,37 @@
+body, h1, p, input, label { 
+    margin:0px;
+    padding:0px;
+    font-family:"맑은 고딕",돋움;
+    font-size:13px;
+    }
+
+h1 {
+    font-size:50px;
+    letter-spacing:-3px;
+    color:#C8C8C8;
+    text-align:center;
+    }
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+#header{
+    width: 100%;
+    background-color: #333333;
+    padding: 3px;
+}
+#header>ul>li{
+    width: 100px;    
+    margin: 0 auto;
+}
+
+
+/* 로그인 폼 디자인 */
+#content{
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#content>div{
+    max-width: 500px;
+    margin: 0 auto;
+}

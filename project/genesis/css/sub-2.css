@@ -1,0 +1,246 @@
+@charset "utf-8";
+/*-------------sub1-model------------*/
+/* tebMenu */
+.tepMenu{width: 100%; height: 445px; background:url(../images/teb_bg.png); overflow: hidden;} /*배경*/
+.tabSet{width: 1200px; height: 445px; margin: 20px auto;}
+.tabSet ul.tabs{width: 1200px; height: 50px;}
+.tabSet ul.tabs li{  /*전체공연,뮤지컬,콘서트,기타*/
+	width: 300px; 
+	height: 35px;
+	text-align: center;
+	font-size: 17px; 
+	font-weight: bold;	
+	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background: #777777;
+}
+.tabSet ul.tabs li a.tabOn{width: 100%; height: 100%; background: #2c3d50; margin-left: 0; display: block;} /*전체공연*/
+.tabSet ul.tabs li a{color: #ffffff;} /*온되어있지않은 나머지메뉴들*/
+.plays{width: 1200px; height:280px; margin: 10px auto; position: relative; overflow: hidden;} /*탭메뉴 전체를 감싸는 DIV 버튼포함*/
+.play{width: 1500px; height:280px; position: relative;} /*버튼포함4개의 썸네일을 감싸는 DIV*/
+.play ul{width: 100%; position: relative; left: 0;}/*버튼 뺀 4개의 썸네일*/
+.play ul>li{width: 300px; height: 100%; text-align: center; padding:0; margin: 0;} /*4개의 썸네일이미지 한개*/
+
+/*상단배너 이전,다음버튼 4개각각*/
+.prev1_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; left: 0px; color: #000; cursor: pointer;} /*상단배너 이전버튼1*/
+.next1_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; right: 300px; color: #000; cursor: pointer;} /*상단배너 다음버튼1*/
+.prev2_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; left: 0px; color: #000; cursor: pointer;} /*상단배너 이전버튼2*/
+.next2_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; right: 300px; color: #000; cursor: pointer;} /*상단배너 다음버튼2*/
+.prev3_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; left: 0px; color: #000; cursor: pointer;}
+.next3_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; right: 300px; color: #000; cursor: pointer;}
+.prev4_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; left: 0px; color: #000; cursor: pointer;}
+.next4_2{font-size: 20px; font-weight: bold; position: absolute; top: 50%; right: 300px; color: #000; cursor: pointer;}
+
+/* banner */
+.banner1{width: 100%; background: #000000; height: 200px; text-align: center;}
+
+/*하단배너 이전,다음버튼*/
+.prev5_1{cursor: pointer;}
+.next5_1{cursor: pointer;}
+
+/* ipMall : 인터파크 홀 하단배너*/
+.Mall1{width: 100%; height: 350px; background:url(../images/teb_bg.png);}   /*하단 배너 배경*/
+.ipMallWrap{width: 1200px; height:285px; margin: 40px auto; position: relative; overflow: hidden;} /*하단 배너 전체를 감싸는 DIV 가운데 배치*/
+.ipMallWrap>div{width: 1500px; height:280px; margin:0 auto;} /*ipMall*/
+.ipMallWrap>div>ul{width: 95%;} /*배너이미지와 타이틀 버튼감싸는 UL*/
+.ipMallWrap>div>ul>li.ip1{width: 300px; height: 100%; text-align: center; padding:0; margin: 0;} /*하단배너 왼쪽 버튼,타이틀,설명,아이콘등*/
+.ipMallWrap>div>ul>li>h3{ /*타이틀*/
+	font-size: 24px;
+	font-weight: bold;
+	display: block; 
+	width:70%;	 
+	margin: 0 auto;
+	border-bottom: 2px solid #cccccc;
+}
+
+
+.ipMallWrap>div>ul>li>span{  /*설명*/
+	font-size: 14px;
+	display: block;
+	width: 46%;
+	margin: 10px auto;
+	padding: 5px 0;	
+}
+.mallControl>ul{margin-left: 65px;}  /*이전버튼,동그란버튼5개,다음버튼*/
+.mallControl img{vertical-align: middle;}   /*이전,다음버튼 동그란버튼 가운데 위치하도록*/
+.mallControl>ul>li>ul{ /*동그란버튼 5개 감싸는 UL*/
+	width: 100px; 
+	height: 30px; 
+	margin: 15px auto 0 auto;
+}
+.mallControl>ul>li>ul>li{   /*동그란버튼 5개*/
+	width: 13px; 
+	height: 13px; 
+	box-sizing: border-box; 
+	border: 1px solid #000; 
+	border-radius: 50%; 
+	margin: 0 3px;
+	}
+.mallControl .bg_black{background-color: #000;} /*동그란 버튼 활성화*/
+
+
+/*우측 썸네일 슬라이드 이미지*/
+.ipMallWrap>div>ul>li.ip2{width: 900px; height: 100%; text-align: center; padding:0; margin: 0; overflow: hidden;} /*5개썸네일 감싸는 LI*/
+.ip2Wrap ul{width: 1500px;} /*실제 슬라이드 되는 썸네일이미지 영역*/
+.ip2Wrap ul>li{width: 300px; height: 100%; text-align: center; padding:0; margin: 0;} /*썸네일 이미지 하나를 감싸는 LI*/
+
+
+.mallControl img{vertical-align: middle;} /*이미지 중앙에 글자오도록*/
+
+
+/*-----------sub2-PURCHASE----------*/
+
+/*-----------sub3-EXPERIENCE----------*/
+#main{
+    overflow: hidden;
+}
+/*제네시스 스페이스 메인*/
+#section1-3{
+    width: 100%;
+    height: 1000px;
+}
+    .experience ul img{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        top: 80px;
+    }
+    .experience ul li{
+        color: #ffffff;
+        font-size: 1.3em;
+        text-indent: 100px;
+        padding: 20px;
+        position: relative;
+        top: -550px;
+    }
+    .experience ul li h1{
+        font-size: 2.8em;
+    }
+    .experience .bottom-icon-wrap{
+        z-index: 200; 
+        position: relative; 
+        top: 800px; 
+        left: 50%;
+        width: 300px; 
+        height: 300px;
+        margin: 0 auto;
+    }      
+        .experience .bottom-icon-wrap a{
+            margin-top: 0; 
+            transition: all 0.3s;
+        }
+        .experience .bottom-icon-wrap>a:hover{
+            margin-top: 15px; 
+            transition: all 0.3s;
+            color: #ffffff;
+        }
+/*section3-3 제네시스 스튜디오*/
+#section3-3{
+    width: 100%;
+}
+    /*our space*/
+    .section3-model{
+        height: 20px;
+        margin-top: 50px;
+    }
+    #section3-3 div{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+        #section3-3 h1{
+            font-size: 2em;
+        }
+        #section3-3 li{
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 3em;
+            padding: 20px;
+        }
+        /*스튜디오 글자 정렬*/
+        .hanam li, .suji li{
+            text-align: left;
+            margin-right: 120px;
+        }
+        .gangnam li, .anseong li{
+            text-align: right;
+            margin-left: 120px;
+        }
+ 
+        /*자세히 보기*/
+        #section3-3 .more{
+            cursor: pointer;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            background: none;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,.3);
+            overflow: hidden; 
+        }
+        #section3-3 .more:before{
+            content: '';
+            width: 600%;
+            height: 600%;
+            opacity: 0.5;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 1000%;
+            left: -150%;
+            transition: 0.5s;
+        } 
+        #section3-3 .more:hover:before{
+            top: -45%;
+            left: -200%;
+        }
+        /*스튜디오 하남*/
+        #section3-3 .hanam h1{
+            color: burlywood;
+        }
+        #section3-3 .hanam .more:before{
+            background: burlywood;
+        }
+        /*스튜디오 강남*/
+        #section3-3 .gangnam h1{
+            color: darksalmon;
+        }
+        #section3-3 .gangnam .more:before{
+            background: darksalmon;
+        }
+        /*스튜디오 수지*/
+        #section3-3 .suji h1{
+            color: steelblue;
+        }
+        #section3-3 .suji .more:before{
+            background: steelblue;
+        }
+        /*스튜디오 안성*/
+        #section3-3 .anseong h1{
+            color: darkcyan;
+        }
+        #section3-3 .anseong .more:before{
+            background: darkcyan;
+        }
+
+/*네비게이션 바*/
+#section2-3{
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+    #section2-3 ul li{
+        float: left;
+        margin-left: 100px;
+        color: rgba(255,255,255,.7);
+    }
+    #section2-3 ul li a{
+        color: rgba(255,255,255,.7);
+    }
+    #section2-3 ul li a:hover{
+        color: rgba(255,255,255,.3);
+        text-decoration: underline;
+    }

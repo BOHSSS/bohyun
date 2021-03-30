@@ -1,0 +1,385 @@
+@charset "utf-8";
+/*-------------sub1-model------------*/
+/* 모델 탭 */
+#main_model{
+    width: 100%;
+    background: black;
+}
+    .model_nav_wrap{
+        position: relative;
+        top: 80px;
+    }
+        .model_nav>.buttons{
+            background-color:rgba(255,255,255,.2);
+            padding-left: 150px;
+            overflow: hidden;
+            display: flex;
+            justify-content: left;
+        }
+            .model_nav>.buttons>label{
+                width: 120px;
+                height: 40px;
+                display: block;
+                text-align: center; 
+                font-size: 15px; 
+                line-height: 40px;
+                color: rgba(255,255,255,.7);
+                border-right: 1px solid rgba(255,255,255,.3);
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            .model_nav>.buttons>label:first-child{
+                border-left: 1px solid rgba(255,255,255,.3);
+            }
+            .model_nav>.buttons>label:hover{
+                background: black;
+                cursor: pointer;
+            }
+
+        /*1번째 탭*/
+        input:nth-of-type(1){
+            display: none;
+        }
+        input:nth-of-type(1)~div:nth-of-type(1){
+            display: none;
+        }
+        input:nth-of-type(1):checked~div:nth-of-type(1){
+            display: block;
+        }
+        /*2번째 탭*/
+        input:nth-of-type(2){
+            display: none;
+        }
+        input:nth-of-type(2)~div:nth-of-type(2){
+            display: none;  
+        }
+        input:nth-of-type(2):checked~div:nth-of-type(2){
+            display: block;
+        }
+        /*3번째 탭*/
+        input:nth-of-type(3){
+            display: none;
+        }
+        input:nth-of-type(3)~div:nth-of-type(3){
+            display: none;  
+        }
+        input:nth-of-type(3):checked~div:nth-of-type(3){
+            display: block;
+        }
+        /*4번째 탭*/
+        input:nth-of-type(4){
+            display: none;
+        }
+        input:nth-of-type(4)~div:nth-of-type(4){
+            display: none;  
+        }
+        input:nth-of-type(4):checked~div:nth-of-type(4){
+            display: block;
+        }
+        /*5번째 탭*/
+        input:nth-of-type(5){
+            display: none;
+        }
+        input:nth-of-type(5)~div:nth-of-type(5){
+            display: none;  
+        }
+        input:nth-of-type(5):checked~div:nth-of-type(5){
+            display: block;
+        }
+
+        input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1){
+            border-bottom: 0px solid #a52a2a;
+            background-color: #000000;      
+            color: #ffffff;      
+        }
+        input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2){
+            border-bottom: 0px solid #a52a2a;
+            background-color: #000000;
+            color: #ffffff;  
+        }
+        input:nth-of-type(3):checked~section.buttons>label:nth-of-type(3){
+            border-bottom: 0px solid #a52a2a;
+            background-color: #000000;
+            color: #ffffff;  
+        }
+        input:nth-of-type(4):checked~section.buttons>label:nth-of-type(4){
+            border-bottom: 0px solid #a52a2a;
+            background-color: #000000;
+            color: #ffffff;  
+        }
+        input:nth-of-type(5):checked~section.buttons>label:nth-of-type(5){
+            border-bottom: 0px solid #a52a2a;
+            background-color: #000000;
+            color: #ffffff;  
+        }
+
+
+/* 모델 슬라이드 배너 */
+#model_slide{width: 100%; min-width: 1180px; position: relative;}
+    section #main_img{
+        width: 100%;
+        height: 650px;
+        position: relative;
+        margin: 0 auto;
+    }
+        section #main_img #slide_text{
+            position: absolute;
+            top: 120px;
+            left: 150px;
+            z-index: 100;
+            line-height: 4em;
+            font-size: 2em;
+            text-shadow: 3px 3px 10px black;
+            color: #ffffff;
+        }
+            section #main_img #slide_text h1{
+                font-size: 5em;
+            }
+        section #main_img #slide_btn{
+            width: 200px;
+            margin: 0 auto;
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            margin-left: -48px;
+            z-index: 5;
+        }
+            section #main_img #slide_btn li{
+                float: left;
+            }
+                section #main_img #slide_btn .slide_stop li.sd_stop{
+                    background: url(../img/slide_stop.png) no-repeat left center;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                }
+                section #main_img #slide_btn .slide_stop li.sd_start{
+                    background: url(../img/slide_play.png) no-repeat left center;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 5px;
+                    display: none;
+                }
+                section #main_img #slide_btn .slide_stop li a{
+                    display: block;
+                    text-indent: -9999px;
+                }
+                section #main_img #slide_btn .slide_num .on a{
+                    background: url(../img/slide_num_over.png) no-repeat left center;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 8px;
+                    text-indent: -9999px;
+                }
+                section #main_img #slide_btn .slide_num li a{
+                    background: url(../img/slide_num.png) no-repeat left center;
+                    display: block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 8px;
+                    text-indent: -9999px;
+                }
+        section #main_img #slide_img_wrap{
+            position: relative;
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+        }
+            section #main_img .pc_main{
+                width: 100%;
+                height: 800px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+                section #main_img .pc_main ul li{
+                    float: left;
+                    position: absolute;
+                    width: 100%;
+                    height: 800px;
+                }
+                    section #main_img .pc_main ul li a{
+                        text-indent: -9999px;
+                        display: block;
+                    }
+                    section #main_img .pc_main ul li.G70_0{
+                        background: url(../image/genesis-model-g70-slide-banner-1.jpg) no-repeat center center;
+                        left: 0;
+                    }
+                    section #main_img .pc_main ul li.G70_1{
+                        background: url(../image/genesis-model-g70-slide-banner-2.jpg) no-repeat center center;
+                        left: 100%;
+                    }
+                    section #main_img .pc_main ul li.G70_2{
+                        background: url(../image/genesis-model-g70-slide-banner-3.jpg) no-repeat center center;
+                        left: 200%;
+                    }
+                    section #main_img .pc_main ul li.G70_3{
+                        background: url(../image/genesis-model-g70-slide-banner-4.jpg) no-repeat center center;
+                        left: 300%;
+                    }
+                    section #main_img .pc_main ul li.G70_4{
+                        background: url(../image/genesis-model-g70-slide-banner-5.jpg) no-repeat center center;
+                        left: 400%;
+                    }
+/* 모델 디자인 컨텐츠 */
+
+
+
+
+/*-----------sub2-PURCHASE----------*/
+
+/*-----------sub3-EXPERIENCE----------*/
+#main{
+    overflow: hidden;
+}
+/*제네시스 스페이스 메인*/
+#section1-3{
+    width: 100%;
+    height: 1000px;
+}
+    .experience ul img{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        top: 80px;
+    }
+    .experience ul li{
+        color: #ffffff;
+        font-size: 1.3em;
+        text-indent: 100px;
+        padding: 20px;
+        position: relative;
+        top: -550px;
+    }
+    .experience ul li h1{
+        font-size: 2.8em;
+    }
+    .experience .bottom-icon-wrap{
+        z-index: 200; 
+        position: relative; 
+        top: 800px; 
+        left: 50%;
+        width: 300px; 
+        height: 300px;
+        margin: 0 auto;
+    }      
+        .experience .bottom-icon-wrap a{
+            margin-top: 0; 
+            transition: all 0.3s;
+        }
+        .experience .bottom-icon-wrap>a:hover{
+            margin-top: 15px; 
+            transition: all 0.3s;
+            color: #ffffff;
+        }
+/*section3-3 제네시스 스튜디오*/
+#section3-3{
+    width: 100%;
+}
+    /*our space*/
+    .section3-model{
+        height: 20px;
+        margin-top: 50px;
+    }
+    #section3-3 div{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+        #section3-3 h1{
+            font-size: 2em;
+        }
+        #section3-3 li{
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 3em;
+            padding: 20px;
+        }
+        /*스튜디오 글자 정렬*/
+        .hanam li, .suji li{
+            text-align: left;
+            margin-right: 120px;
+        }
+        .gangnam li, .anseong li{
+            text-align: right;
+            margin-left: 120px;
+        }
+ 
+        /*자세히 보기*/
+        #section3-3 .more{
+            cursor: pointer;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+            position: relative;
+            background: none;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,.3);
+            overflow: hidden; 
+        }
+        #section3-3 .more:before{
+            content: '';
+            width: 600%;
+            height: 600%;
+            opacity: 0.5;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 1000%;
+            left: -150%;
+            transition: 0.5s;
+        } 
+        #section3-3 .more:hover:before{
+            top: -45%;
+            left: -200%;
+        }
+        /*스튜디오 하남*/
+        #section3-3 .hanam h1{
+            color: burlywood;
+        }
+        #section3-3 .hanam .more:before{
+            background: burlywood;
+        }
+        /*스튜디오 강남*/
+        #section3-3 .gangnam h1{
+            color: darksalmon;
+        }
+        #section3-3 .gangnam .more:before{
+            background: darksalmon;
+        }
+        /*스튜디오 수지*/
+        #section3-3 .suji h1{
+            color: steelblue;
+        }
+        #section3-3 .suji .more:before{
+            background: steelblue;
+        }
+        /*스튜디오 안성*/
+        #section3-3 .anseong h1{
+            color: darkcyan;
+        }
+        #section3-3 .anseong .more:before{
+            background: darkcyan;
+        }
+
+/*네비게이션 바*/
+#section2-3{
+    width: 100%;
+    height: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+    #section2-3 ul li{
+        float: left;
+        margin-left: 100px;
+        color: rgba(255,255,255,.7);
+    }
+    #section2-3 ul li a{
+        color: rgba(255,255,255,.7);
+    }
+    #section2-3 ul li a:hover{
+        color: rgba(255,255,255,.3);
+        text-decoration: underline;
+    }

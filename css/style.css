@@ -1,0 +1,107 @@
+*{margin: 0; padding: 0; border:0; font-family:"맑은 고딕",sans-serif,arial;}
+img{border: 0; vertical-align: middle;}
+ul{list-style: none; margin: 0; padding: 0;}
+.cf:after{content:""; display: block; clear: both;}
+a{text-decoration: none;}
+#wrap{
+	position: relative; margin: 0 auto; width: 1600px; min-width: 1000px;
+}
+#header{
+	width: 1600px;
+	height: 70px;
+	position: fixed;
+	left: 50%;
+	margin-left:-800px;
+	top: 35px;
+	z-index: 1000;
+}
+#menuWrap{
+	width: 1400px; height: 50px; position: relative;  top: 0;
+	left: 50%;
+	margin-left:-700px;
+	background: #001355; opacity: 0.85; border-radius: 10px;
+ }
+#menuWrap .fay{
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	display: block;
+	padding: 0 4px;
+	font-weight: bold;
+	background: #fff;
+	color: #26376f;
+	border-radius: 2px;
+	
+}
+#menu{
+	position: absolute; left: 0;
+	top: 0;
+	width: 1200px;
+}
+#menu li{float: left; padding: 0 12px; width:140px;}
+#menu li a{
+	display: block;
+	padding: 2px 4px;
+    line-height: 42px;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+	color: #9d9d9d;
+	opacity: 1;
+}
+#menu li a:hover{color: #fff;}
+#menu li.on a{color: #fff; text-shadow: 0 0 20px #fff;}
+#menu .mLogo a{padding: 0 4px; opacity:1;}
+#menu .mLogo{padding-left: 50px; margin-top: -15px;}
+
+#main{width: 1600px; height: 950px; position: relative; background: #ffbfbf;}
+#profile{width: 1600px; height: 1000px; position: relative; background: #ffffbf;}
+#mobile{width: 1600px; height: 1000px; position: relative; background: #bfffcf;}
+#adaptive01{width: 1600px; height: 1000px; position: relative; background: #bfefff;}
+#shopping{width: 1600px; height: 1000px; position: relative; background: #bfbfff;}
+/* #graphic{width: 1600px; height: 1000px; position: relative; background: #bfffef;}
+#epilogue{width: 1600px; height: 1000px; position: relative; background: #ffbfff;} */
+#profile>*,#mobile>*,#adaptive01>*,#shopping>*,#graphic>*,#epilogue>*{position: absolute;}
+
+#floatdiv{
+	position: absolute;
+	left: 0;
+	top: 250px;
+	margin-left: 10px;
+}
+#floatdiv ul{list-style: none; border:0; margin: 0; padding: 0;}
+#floatdiv ul li span{margin: 0 0 5px 0; cursor: pointer;}
+#floatdiv ul li #btn01{display: block; width: 40px; height: 40px; background: url(../images/button/before/be01.png) no-repeat;}
+#floatdiv ul li #btn02{display: block; width: 40px; height: 40px; background: url(../images/button/before/be02.png) no-repeat;}
+#floatdiv ul li #btn03{display: block; width: 40px; height: 40px; background: url(../images/button/before/be03.png) no-repeat;}
+#floatdiv ul li #btn04{display: block; width: 40px; height: 40px; background: url(../images/button/before/be04.png) no-repeat;}
+#floatdiv ul li #btn05{display: block; width: 40px; height: 40px; background: url(../images/button/before/be05.png) no-repeat;}
+/* #floatdiv ul li #btn06{display: block; width: 40px; height: 40px; background: url(../images/button/before/be06.png) no-repeat;}
+#floatdiv ul li #btn07{display: block; width: 40px; height: 40px; background: url(../images/button/before/be07.png) no-repeat;}
+ */
+
+#floatdiv ul li:hover #btn01{background: url(../images/button/after/af01.png) no-repeat;}
+#floatdiv ul li:hover #btn02{background: url(../images/button/after/af02.png) no-repeat;}
+#floatdiv ul li:hover #btn03{background: url(../images/button/after/af03.png) no-repeat;}
+#floatdiv ul li:hover #btn04{background: url(../images/button/after/af04.png) no-repeat;}
+#floatdiv ul li:hover #btn05{background: url(../images/button/after/af05.png) no-repeat;}
+/* #floatdiv ul li:hover #btn06{background: url(../images/button/after/af06.png) no-repeat;}
+#floatdiv ul li:hover #btn07{background: url(../images/button/after/af07.png) no-repeat;}
+ */
+#floatdiv ul li.active #btn01{background: url(../images/button/after/af01.png) no-repeat;}
+#floatdiv ul li.active #btn02{background: url(../images/button/after/af02.png) no-repeat;}
+#floatdiv ul li.active #btn03{background: url(../images/button/after/af03.png) no-repeat;}
+#floatdiv ul li.active #btn04{background: url(../images/button/after/af04.png) no-repeat;}
+#floatdiv ul li.active #btn05{background: url(../images/button/after/af05.png) no-repeat;}
+/* #floatdiv ul li.active #btn06{background: url(../images/button/after/af06.png) no-repeat;}
+#floatdiv ul li.active #btn07{background: url(../images/button/after/af07.png) no-repeat;}
+ */
+
+
+
+
+
+
+
+
+

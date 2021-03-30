@@ -1,0 +1,946 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>GENESIS</title>
+	<meta charset='utf-8'>
+	<!-- 반응형 웹사이트 제작 -->
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.8, minimum-scale=1.0'>	
+
+	<link href='css/reset.css' rel='stylesheet'>
+	<link href='css/style.css' rel='stylesheet'>
+	<link href='css/respons.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>	
+	
+	<!-- 자바스크립트가 실행되기위한 스크립트 라이브러리 -->
+	<script src='js/lib/jquery-1.12.4.min.js'></script>
+	<!-- 벤더프리픽스를 붙이지 않아도 되는 스크립트 -->
+	<script src='js/lib/prefixfree.min.js'></script>
+	<script src='js/appbar.js'></script>
+
+</head>
+<body>
+
+<div id="wrap">
+	<header id="header">
+		<div>
+			<ul class="pc floatclear">
+				<li>
+					<h1>
+						<a href="index.html">
+							<img src="img/logo.png" alt="genesis">
+						</a>
+					</h1>
+				</li>
+				<li>
+					<aside class="pc floatclear">
+						<ul class="floatclear">
+							<li><a><i class="fas fa-user-friends"></i></a></li>
+							<li> | </li>
+							<li><a href="login.html"><i class="fas fa-unlock-alt"></i></a></li>
+						</ul>
+					</aside>
+				</li>
+			</ul>  <!-- class="pc floatclear" -->
+			<nav class="pc floatclear">
+				<ul>
+					<li></li>
+					<li><a href="model.html">MODEL</a>
+						<div class="sub">
+							<div class="sub_content_1">
+								<div>
+									<a href="#">
+										<p>GENESIS</p>
+										<h2>G70</h2>
+										<img src="image/genesis-nav-g70.png" alt="g70">
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<p>GENESIS</p>
+										<h2>G80</h2>
+										<img src="image/genesis-nav-g80.png" alt="g80">
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<p>GENESIS</p>
+										<h2>G90</h2>
+										<img src="image/genesis-nav-g90.png" alt="g90">
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<p>GENESIS</p>
+										<h2>GV70</h2>
+										<img src="image/genesis-nav-gv70.png" alt="gv70">
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<p>GENESIS</p>
+										<h2>GV80</h2>
+										<img src="image/genesis-nav-gv80.png" alt="gv80">
+										<span>자세히 보기</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="purchase.html">PURCHASE</a>
+						<div class="sub">
+							<div class="sub_content_2">
+								<div class="brand">
+									<h2>구매</h2><br>
+									<p>당신만의 제네시스를 <br>찾아가는 여정을 지원합니다.</p>
+
+								</div>
+								<div class="line">
+									<a href="#">
+										<h2>구매프로그램</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div class="line">
+									<a href="#">
+										<h2>스펙트럼</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div class="line">
+									<a href="#">
+										<h2>구매 상담 신청</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div class="line">
+									<a href="#">
+										<h2>사양 조회하기</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div class="pur">
+									<img src="image/genesis-nav-purchase.jpg" alt="PURCHASE">
+									<p></p>
+									<ul>
+										<li><a href="#"><h3>견적 내기</h3></a></li>
+										<!-- <li><p>다양한 옵션, 컬러 등 당신만을 <br> 위한 제네시스를 탐색해보세요.</p></li> -->
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="experience.html">EXPERIENCES</a>
+						<div class="sub">
+							<div class="sub_content_2">
+								<div class="brand">
+									<h2>체험</h2><br>
+									<p>제네시스가 담아 낸 브랜드의 이상과 가치를 미리 경험할 수 있습니다.</p>
+
+								</div>
+								<div>
+									<a href="#">
+										<h2>스페이스</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>전시장 찾기</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+
+								<div class="pur">
+									<img src="image/genesis-nav-experience.jpg" alt="PURCHASE">
+									<p></p>
+									<ul>
+										<li><a href="#"><h3>시승신청</h3></a></li>
+										<!-- <li><p>다양한 옵션, 컬러 등 당신만을 <br> 위한 제네시스를 탐색해보세요.</p></li> -->
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="member.html">MEMBERS</a>
+						<div class="sub">
+							<div class="sub_content_2">
+								<div class="brand">
+									<h2>멤버스</h2><br>
+									<p>제네시스를 선택한 순간 당신의 일상은 특별해집니다.</p>
+
+								</div>
+								<div>
+									<a href="#">
+										<h2>제네시스 멤버십</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>커넥티드 서비스</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>디지털 서비스</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>차량관리 서비스</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div class="pur">
+									<img src="image/genesis-nav-member.jpg" alt="PURCHASE">
+									<p></p>
+									<ul>
+										<li><a href="#"><h3>제네시스 커넥티드 서비스</h3></a></li>
+										<!-- <li><p>다양한 옵션, 컬러 등 당신만을 <br> 위한 제네시스를 탐색해보세요.</p></li> -->
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="genesis.html">GENESIS</a>
+						<div class="sub">
+							<div class="sub_content_2">
+								<div class="brand">
+									<h2>제네시스</h2><br>
+									<p>높은 품격과 안목을 가진 사람들을 위한 최상의 자동차와 서비스를 만들어 내고자 합니다.</p>
+
+								</div>
+								<div>
+									<a href="#">
+										<h2>브랜드 소개</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>컨셉카</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>모터쇼</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>로드트립</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+								<div>
+									<a href="#">
+										<h2>제네시스X골프</h2>
+										<span>자세히 보기</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+
+			
+			<div class="sidebar_menu">
+				<nav class="mobile floatclear m_nav">
+					<ul>
+						<li><a href="model.html">MODEL</a>
+							<div class="m_sub1">
+								<div class="m_sub_content_1">
+									<div>
+										<a href="#">
+											<h2>G70</h2>
+											<img src="image/genesis-nav-g70.png" alt="g70">
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>G80</h2>
+											<img src="image/genesis-nav-g80.png" alt="g80">
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>G90</h2>
+											<img src="image/genesis-nav-g90.png" alt="g90">
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>GV70</h2>
+											<img src="image/genesis-nav-gv70.png" alt="gv70">
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>GV80</h2>
+											<img src="image/genesis-nav-gv80.png" alt="gv80">
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="purchase.html">PURCHASE</a>
+							<div class="m_sub2">
+								<div class="m_sub_content_2">
+									<div class="line">
+										<a href="#">
+											<h2>구매프로그램</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div class="line">
+										<a href="#">
+											<h2>스펙트럼</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div class="line">
+										<a href="#">
+											<h2>구매 상담 신청</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div class="line">
+										<a href="#">
+											<h2>사양 조회하기</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<img src="image/genesis-nav-purchase.jpg" alt="구매">
+								</div>
+							</div>
+						</li>
+						<li><a href="experience.html">EXPERIENCES</a>
+							<div class="m_sub3">
+								<div class="m_sub_content_2">
+									<div>
+										<a href="#">
+											<h2>스페이스</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>시승 신청</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>전시장 찾기</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<img src="image/genesis-nav-experience.jpg" alt="체험">
+	
+								</div>
+							</div>
+						</li>
+						<li><a href="members.html">MEMBERS</a>
+							<div class="m_sub4">
+								<div class="m_sub_content_2">
+									<div>
+										<a href="#">
+											<h2>제네시스 멤버십</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>커넥티드 서비스</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>디지털 서비스</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>차량관리 서비스</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<img src="image/genesis-nav-member.jpg" alt="멤버">
+								</div>
+							</div>
+						</li>
+						<li><a href="genesis.html">GENESIS</a>
+							<div class="m_sub5">
+								<div class="m_sub_content_2">
+									<div>
+										<a href="#">
+											<h2>브랜드 소개</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>컨셉카</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>모터쇼</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>로드트립</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+									<div>
+										<a href="#">
+											<h2>제네시스X골프</h2>
+											<i class="fas fa-chevron-right fa-1x"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav> <!--class="mobile floatclear"-->
+			</div>
+			<div class="mobile">
+				<ul>
+					<li>
+						<a href="#" class="appBarBtn">
+							<i class="bar1 bar"></i>
+							<i class="bar2 bar"></i>
+							<i class="bar3 bar"></i>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" class="mobile-logo-btn">
+							<span><img src="img/logo.png" alt=""></span>
+						</a>
+					</li>
+					<li>
+						<a href="login.html" class="mobile-user-btn">
+							<i class="fas fa-user-friends"></i>
+						</a>
+					</li>
+				</ul>
+			</div> <!-- class="mobile" -->
+		</div>
+	</header>
+	
+	<main id="main">
+		<div class="menu_bg"></div>
+		<section id="section1">
+			<div>
+				<video class="mainVideo" autoplay loop muted poster=''> 
+					<source src="video/genesis-main.mp4" type="video/mp4">
+				</video>
+				<div class="section1-bottom-icon-wrap">
+					<div class="section1-icon-center-wrap">
+						<a href="#"><i class="fas fa-chevron-down"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section2">
+                <figure class="section2-ho">
+					<img src="image/space.jpg" alt="">
+					<figcaption>
+						<h3>스페이스</h3>
+						<p>제네시스의 디자인과 고유한 감각을 반영한 현대적 공간으로 여러분을 초대합니다.</p>
+						<p>제네시스에 관한 다양한 체험으로 당신만의 제네시스를 찾는 여정을 지원합니다.</p>
+					</figcaption>
+					<a href="#"></a>
+				</figure>
+				<figure class="section2-ho">
+					<img src="image/road-trip.jpg" alt="">
+					<figcaption>
+						<h3>로드트립</h3>
+						<p>제네시스와 내셔널지오그래픽 트래블러와 함께하는 서사적 여행, </p>
+						<p>제네시스 로드트립을 통해 자세한 정보를 확인하세요.</p>
+					</figcaption>
+					<a href="#"></a>
+				</figure>
+		</section>
+		<section id="section3">
+			<div>
+				<div class="section3-model">
+					<ul>
+						<li><h1>OUR MODELS</h1></li>
+						<li>역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.</li>
+					</ul>
+				</div>
+				<div class="section3-nav">
+					<input type="radio" id="first" name="tab" checked="checked">
+					<input type="radio" id="second" name="tab">
+					<input type="radio" id="third" name="tab">
+					<input type="radio" id="fourth" name="tab">
+					<input type="radio" id="fifth" name="tab">
+					<input type="radio" id="sixth" name="tab">
+					<section class="buttons">
+						<label for="first">ALL</label>
+						<label for="second">G70</label>
+						<label for="third">G80</label>
+						<label for="fourth">G90</label>
+						<label for="fifth">GV70</label>
+						<label for="sixth">GV80</label>
+					</section>
+					<div class="tab_item">
+						<ul class="section3 floatclear">
+							<li class="item">
+								<div>
+									<img src="image/genesis-all-05.jpg" alt="">
+									<p></p>
+									<ul>
+										<li><h2>THE NEW GENESIS</h2></li>
+										<li><p>움직임, 그것은 우리의 DNA</p></li>
+										<li><a href="#"><span>GV70 ></span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-all-02.jpg" alt="">
+									<p></p>
+									<ul>
+										<li><h2>GENESIS</h2></li>
+										<li><p>열망의 창조, 새로운 시작과 긍정적인 변화</p></li>
+										<li><a href="#"><span>G70 ></span></a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-all-01.jpg" alt="">
+									<p></p>
+									<ul>
+										<li><h2>OUR WAY</h2></li>
+										<li><p>새로운 길을 끊임없이 탐험하는 우리만의 방식</p></li>
+										<li><a href="#"><span>GV80 ></span></a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_item">
+						<ul class="section3 floatclear">
+							<li class="item">
+								<div>
+									<img src="image/genesis-g70-01.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g70-02.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g70-03.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g70-04.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g70-05.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g70-06.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_item">
+						<ul class="section3 floatclear">
+							<li class="item">
+								<div>
+									<img src="image/genesis-g80-05.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g80-02.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g80-03.jpg" alt="">
+									<p></p>					
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g80-04.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g80-08.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g80-06.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_item">
+						<ul class="section3 floatclear">
+							<li class="item">
+								<div>
+									<img src="image/genesis-g90-01.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g90-02.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g90-03.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g90-04.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g90-05.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-g90-06.jpg" alt="">
+									<p></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_item">
+						<ul class="section3 floatclear">
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-01.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-02.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-03.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-04.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-05.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-06.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_item">
+						<ul class="section3 floatclear">
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv80-01.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv80-02.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv80-03.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv80-04.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv70-08.jpg" alt="">
+									<p></p>
+									
+								</div>
+							</li>
+							<li class="item">
+								<div>
+									<img src="image/genesis-gv80-06.jpg" alt="">
+									<p></p>
+						
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section4">
+			<div>
+				<button>MORE</button>
+			</div>
+		</section>
+		<section id="section5">
+			<div class="section5-testdrive">
+				<ul>
+					<li><h1>시승신청</h1></li>
+					<li>제네시스가 담아 낸 브랜드의 이상과 가치를 미리 경험할 수 있습니다.</li>
+					<li>가까운 시승 센터에서 제네시스의 디자인과 기술력을 체험해보세요.</li>
+				</ul>
+				<div class="select-box">
+					<ul class="section5-select">
+						<li> 
+							<select name="items1"> 
+								<option value="none" hidden>시승 희망 장소</option>
+								<option value="lounge">드라이빙 라운지</option>
+								<option value="space">제네시스 스페이스</option>
+							</select>
+						</li>
+						<li>
+							<select name="items2"> 
+								<option value="none" hidden>시승 희망 지역</option>
+								<option value="gangnam">제네시스 강남</option>
+								<option value="hanam">제네시스 스튜디오 하남</option>
+								<option value="ansung">제네시스 스튜디오 안성</option>
+								<option value="seoul">현대 모터스튜디오 서울</option>
+								<option value="goyang">현대 모터스튜디오 고양</option>
+							</select>
+						</li> 
+						<li>
+							<button>신청하기</button>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</section>
+		<section id="section4">
+			<div>
+				<button>MORE</button>
+			</div>
+		</section>
+		<section id="section6">
+			<div>
+				<h1>연관 컨텐츠</h1>
+			</div>
+			<div>
+				<figure class="section6-content">
+					<img src="image/genesis-content-01.jpg" alt="">
+					<figcaption>
+					  <p>
+						  제네시스에서 진행중인 <br> 다양한 이벤트 정보를 전해 드립니다.
+					</p>
+					  <div class="heading">
+						<h2>GENESIS <span>EVENT</span></h2>
+					  </div>
+					</figcaption>
+					<a href="#"></a>
+				</figure>
+				<figure class="section6-content">
+					<img src="image/genesis-content-02.jpg" alt="">
+					<figcaption>
+					  <p>제네시스의 디지털 서비스는 첨단 신기술로 당신과 차가 함께 하는 일상에 편리함을 한층 더해줍니다.</p>
+					  <div class="heading">
+						<h2>DIGITAL <span>SERVICE</span></h2>
+					  </div>
+					</figcaption>
+					<a href="#"></a>
+				</figure>
+				<figure class="section6-content">
+					<img src="image/genesis-content-03.jpg" alt="">
+					<figcaption>
+					  <p>제네시스 오너분들께만 주어지는 <br> 특별한 혜택과 이상적인 경험을 선사합니다.</p>
+					  <div class="heading">
+						<h2>GENESIS <span>MEBERS</span></h2>
+					  </div>
+					</figcaption>
+					<a href="#"></a>
+				</figure>
+			</div>
+		</section>
+	</main>
+	<footer id="footer">
+		<div class="footer-top">
+			<ul>
+				<li>
+					<ul class="footer-logo">
+						<li><a href="#">이용약관</a></li>
+						<li>▪</li>
+						<li><a href="#">개인정보 처리 방침</a></li>
+						<li>▪</li>
+						<li><a href="#"><img src="img/logo.png" alt=""></a></li>
+						<li>▪</li>
+						<li><a href="#">저작권 안내</a></li>
+						<li>▪</li>
+						<li><a href="#">보증 안내</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-cen">
+			<ul>
+				<li>
+					<ul class="footer-sitemap-wrap floatclear">
+						<li>
+							<h2>MODEL</h2>
+							<ul class="footer-sub">
+								<li><a href="#">G70</a></li>
+								<li><a href="#">G80</a></li>
+								<li><a href="#">G90</a></li>
+								<li><a href="#">GV70</a></li>
+								<li><a href="#">GV80</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>PURCHASE</h2>
+							<ul class="footer-sub">
+								<li><a href="#">구매 프로그램</a></li>
+								<li><a href="#">제네시스 스펙트럼</a></li>
+								<li><a href="#">구매 상담 신청</a></li>
+								<li><a href="#">사양 조회하기</a></li>
+								<li><a href="#">견적내기</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>EXPERIENCES</h2>
+							<ul class="footer-sub">
+								<li><a href="#">스페이스</a></li>
+								<li><a href="#">전시장 찾기</a></li>
+								<li><a href="#">시승 신청</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>MEMBERS</h2>
+							<ul class="footer-sub">
+								<li><a href="#">제네시스 멤버십</a></li>
+								<li><a href="#">제네시스 커넥티드 서비스</a></li>
+								<li><a href="#">디지털 서비스</a></li>
+								<li><a href="#">차량관리 서비스</a></li>
+							</ul>
+						</li>
+						<li>
+							<h2>GENESIS</h2>
+							<ul class="footer-sub">
+								<li><a href="#">브랜드 소개</a></li>
+								<li><a href="#">컨셉카</a></li>
+								<li><a href="#">모터쇼</a></li>
+								<li><a href="#">로드트립</a></li>
+								<li><a href="#">제네시스X골프</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				
+				<li>
+					<address>
+						<ul class="floatclear">
+							<li>
+								&copy; GENESIS 2021 Sa Bo Hyun<span>.</span>
+							</li>
+							<li>
+								<ul class="floatclear">
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+								</ul>
+							</li>
+						</ul>
+					</address>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

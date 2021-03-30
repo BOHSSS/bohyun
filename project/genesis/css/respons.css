@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+@media all and (max-width:1730px){ /*1730픽셀 이하일때*/
+
+    #section1>div{
+        height: 850px; 
+        overflow: hidden;
+    }
+    .section2-ho:hover figcaption,
+    .section2-ho.hover figcaption{
+        top: 110px;
+    }
+}
+
+@media all and (max-width:1090px){ /*최대1090픽셀 이하일때*/
+    .pc{display: none;}
+    .mobile{display: block;}
+    #section1>div{
+        height: 560px; 
+        overflow: hidden;
+    }
+    .section2-ho:hover figcaption,
+    .section2-ho.hover figcaption{
+        top: 80px;
+    }
+    .section2-ho {
+        margin: 15px;
+        margin-top: 25px;
+    }
+    .section2-ho p {
+        font-size: 0.8em;
+        letter-spacing: 0px;
+    }
+    .appBarBtn{
+        left: 10px;
+    }
+    .mobile-user-btn{
+        right: 10px;
+    }
+    .section3-video>li{
+        float: left;
+        width: 50%;
+    }
+    .footer-sitemap-wrap>li{
+        float: none;
+        margin-right: 0;
+        border-top: 1px solid #555555;
+    }
+    .footer-sitemap-wrap>li>i{
+        display: none;
+    }
+    .footer-sitemap-wrap>li:last-child{
+        border-bottom: 1px solid #555555;
+    }
+    .footer-sitemap-wrap>li>h2{
+        padding: 20px 0 20px 20px;
+    }
+    .footer-sub{
+        padding-left: 20px;
+        display: none;
+        transition: all 0.3s;
+    }
+    .footer-sitemap-wrap>li:hover>ul.footer-sub{
+        display: block;
+    }
+
+    address ul>li:first-child{
+        float: none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    address ul>li:last-child{
+        float: none;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:760px){ /*최대760픽셀 이하일때*/
+
+    #section1>div{
+        height: 480px; 
+        overflow: hidden;
+    }
+    #section2{
+        display: inline-block;
+    }
+}
+
+@media all and (max-width:600px){ /*최대600픽셀 이하일때*/
+    /* #section2>div>ul>li>ul{
+        padding: 40px;
+        height: auto;
+    }
+
+    .section3-video>li>div>ul{
+        left: 30px;
+        top: 150px;
+    }
+    .section3-video>li:hover>div>ul{
+        top: 50px;
+    } */
+    #section6>div{
+        display: inline;
+    }
+    
+
+}
+
+@media all and (max-width:400px){ /*최대400픽셀 이하일때*/
+    .section3-nav>ul>li>a{
+        padding: 19px 1px;
+        font-size: 11px;
+    }
+    .section3-video>li>div>ul>li>h2{
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    .section3-video>li>div>ul>li>p{
+        padding-bottom: 20px;
+        font-size: 17px;
+    }
+
+}
