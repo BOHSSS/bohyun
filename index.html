@@ -3,106 +3,125 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>사보현 포트폴리오</title>
+	<title>bohyun's potfolio</title>
 	<link rel="stylesheet" href="css/style2.css"/>
 	<link rel="shortcut icon" href="favicon.ico"/>
+	
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script src='js/jquery.ba-throttle-debounce.js'></script>
+    <script src="js/jquery.easing.compatibility.js"></script>
+
 	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery.Floater.js"></script>
+    <script src="js/swiper.min.js"></script>
+
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/script2.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
 
 	<script type="text/javascript">
 		function bookmark(){
-			window.external.AddFavorite('http://0000dothome.co.kr/','hyun Portfolio');
+			window.external.AddFavorite('https://bohsss.github.io/bohyun/','bohyun Portfolio');
 		}
 	</script>
-	<script>
-		$('.type').typed({
-		strings:["I'm Sa Bo Hyun"+"<br>"+"WEB PUBLISHER"+"<br>"+"-PORTFOLIO-"],
-		typeSpeed:150, //타이핑속도
-		backDelay:200,
-		loop: true //false는 한번만 실행
-	});
 
-	</script>
 </head>
 <body>
-	<div id="frame">
-        <div class="top">
-            <h1 class="name"><a href="index.html">Blueming</a></h1>
-        </div>
-        <div class="left">
-            <div class="menuBtn">
-                <div class="hamburger">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-                <div class="caption">MENU</div>
-            </div>
-            <div class="menu_list">
-                <ul class="main">
-                    <li>
-                        <a href="#title">
-                            <span>TITLE</span>
-                            <div class="slider"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about">
-                            <span>ABOUT</span>
-                            <div class="slider"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#skill">
-                            <span>SKILL</span>
-                            <div class="slider"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#work">
-                            <span>PORTFOLIO</span>
-                            <div class="slider"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact">
-                            <span>CONTACT</span>
-                            <div class="slider"></div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="white"></div>
-            <div class="gradient"></div>
-        </div>
-        <div class="right"></div>
-        <div class="bottom">
-            <p class="ver">Last Update 2021.03.29&nbsp;&nbsp;|&nbsp;&nbsp;Responsive Web</p>
-        </div>
-    </div> <!--id="frame"-->
 	<div id="wrap">
+		<div id="frame">
+			<div class="top">
+				<h1 class="name"><a href="index.html">Sabo</a></h1> 
+			</div>
+			<div class="left">
+				<div class="menuBtn">
+					<div class="hamburger">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+					<div class="caption">MENU</div>
+				</div>
+				<div class="menu_list">
+					<ul class="main">
+						<li>
+							<a href="#profile">
+								<span>PROFILE</span>
+								<div class="slider"></div>
+							</a>
+						</li>
+						<li>
+							<a href="#css">
+								<span>CSS</span>
+								<div class="slider"></div>
+							</a>
+						</li>
+						<li>
+							<a href="#responsive">
+								<span>RESPONSIVE</span>
+								<div class="slider"></div>
+							</a>
+						</li>
+						<li>
+							<a href="#jQuery">
+								<span>JQUERY</span>
+								<div class="slider"></div>
+							</a>
+						</li>
+						<li>
+							<a href="#potfolio">
+								<span>POTFOLIO</span>
+								<div class="slider"></div>
+							</a>
+						</li>
+						<li>
+							<a href="#contact">
+								<span>CONTACT</span>
+								<div class="slider"></div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="white"></div>
+				<div class="gradient"></div>
+			</div>
+			<div class="right"></div>
+			<div class="bottom">
+				<p class="ver">Last Update 2021.03.29&nbsp;&nbsp;|&nbsp;&nbsp;Responsive Web</p>
+			</div>
+		</div> <!--id="frame"-->
+
 		<div id="header">
 			<div id="menuWrap">
-				<ul id="menu" class="cf">
-					<li class="mLogo"><a href="#main"><img src="images/logo1.png" width="90" alt="logo"/></a></li>
-					<li><a href="#profile">ABOUT ME</a></li>
-					<li><a href="#mobile">HTML/CSS</a></li>
-					<li><a href="#adaptive01">RESPONSIVE</a></li>
-					<li><a href="#shopping">JQUERY</a></li>
-					<li><a href="#graphic">CONTACT</a></li>
-					<!-- <li><a href="#epilogue">CONTACT</a></li> -->
-				</ul>
+				<div id="menu" class="ph-heart-nav nav cf">
+					<a href="#main"></a>
+					<a href="#profile">profile</a>
+					<a href="#css">css</a>
+					<a href="#responsive">responsive</a>
+					<a href="#jQuery">jQuery</a>
+					<a href="#potfolio">potfolio</a>
+					<a href="#contact">contact</a>
+					<div class="effect"></div>
+				</div>
+
+				<!-- <ul id="menu" class="cf">
+					<li class="mLogo"><a href="#main"><img src="images/logo1.png" width="80" alt="logo"/></a></li>
+					<li><a href="#profile">profile</a></li>
+					<li><a href="#mobile">css</a></li>
+					<li><a href="#adaptive01">responsive</a></li>
+					<li><a href="#shopping">jQuery</a></li>
+					<li><a href="#graphic">portfolio</a></li>
+					<li><a href="#epilogue">contact</a></li>
+				</ul> -->
 			</div>
 		</div><!-- id="header" -->
+
 		<div id="contents">
 			<div id="main" class="mn">
 				<div class="main_wrap">
 					<div class="main_text">
-						<h1>WEB POTFOLIO SITE</h1>
+						<h2>FLEXIBLE.</h2>
+						<h2>TRENDY.</h2>
 						<span class="type"></span>
 					</div>
 					<div class="main_img_wrap">
@@ -110,48 +129,54 @@
 							<img src="images/main_img.png" alt="">
 						</div>
 					</div>
+					<div class="scrollIcon">
+						<a href="#profile">
+						   <span></span>
+							<p>Scroll Down</p>
+						</a>
+					</div>
 					
 				</div>	
 			</div>
 			<div id="profile" class="mn">
 				<div class="profile_wrap">
 					<div class="profile_img">
+						<h2>PROFILE</h2>
 						<img src="images/profile_img.jpg" alt="">
 					</div>
 					<div class="profile_text">
-						<h1>ABOUT ME</h1>
 						<div class="name">
-							<h2>NAME</h2>
+							<h3>NAME</h3>
 							<p>사보현</p>
 						</div>
 						<div class="birth">
 							<p>
-								<h2>BIRTH</h2>
+								<h3>BIRTH</h3>
 								1998.08.13 
 							</p>
 						</div>
 						<div class="cer">
-							<h2>CERTIFICATION</h2>
+							<h3>CERTIFICATION</h3>
 							<p><span>2020.11</span> 컴퓨터 활용능력 1급</p>
 							<p><span>2020.01</span> GTQi 일러스트 1급</p>
 							<p><span>2019.09</span> GTQ 포토샵 1급</p>
 						</div>
 						<div class="edu">
-							<h2>EDUCATION</h2>
+							<h3>EDUCATION</h3>
 							<p><span>2020.11 ~ 2021.04</span> 그린컴퓨터아카데미 UI/UX 웹디자인(웹퍼블리셔) 과정 수료</p>
 							<p><span>2017.03 ~ 2021.02</span> 성결대학교 미디어소프트웨어학과 졸업</p>
 							<p><span>2014.03 ~ 2016.02</span> 평촌고등학교 졸업</p>
 						</div>
 						<div class="career">
-							<h2>CAREER</h2>
-							<p><span>2020.08 ~ 2020.12</span> '예모마일' 쇼핑몰 웹 배너 디자인 보조</p>
+							<h3>CAREER</h3>
+							<p><span>2020.08 ~ 2020.12</span> '예모마일' 쇼핑몰 웹 배너 </p>
 						</div>
 						<div class="skill">
 							<div id="PROFILE" class="mn">
 								<div id="profile_box">
 									<div class="pro4">
-										<h2>SKILL</h2>
-										<div class="circle-wrap">	
+										<h3>SKILL</h3>
+										<!-- <div class="circle-wrap">	
 										  <figure class="chart" data-percent="90">
 											 <svg width="110" height="110">
 											   <circle class="outer" cx="95" cy="55" r="48" transform="rotate(-90, 75, 75)" />
@@ -202,7 +227,7 @@
 											 <p>80%</p>
 										   </figure>
 										   
-										</div> 
+										</div>  -->
 									</div>
 								</div>
 							</div>
@@ -269,32 +294,33 @@
 					</a>
 				</div> -->
 			</div>
-			<div id="mobile" class="mn">
+			<div id="css" class="mn">
 
 			</div>
-			<div id="adaptive01" class="mn">
+			<div id="responsive" class="mn">
 
 			</div>
-			<div id="shopping" class="mn">
+			<div id="jQuery" class="mn">
 
 			</div>
-			<div id="graphic" class="mn">
+			<div id="potfolio" class="mn">
 
 			</div>
-			<div id="epilogue" class="mn">
+			<div id="contact" class="mn">
 
 			</div>
 		</div>
 	</div><!-- id="wrap" -->
 	<div id="floatdiv">
 		<ul>
-			<li class="active"><span id="btn01">Home</span></li>
-			<li><span id="btn02">About</span></li>
+			<li class="active"><span id="btn01">Main</span></li>
+			<li><span id="btn02">Profile</span></li>
 			<li><span id="btn03">Css</span></li>
 			<li><span id="btn04">Res</span></li>
 			<li><span id="btn05">JQuery</span></li>
-			<li><span id="btn06">Contact</span></li>
-			<!-- <li><span id="btn07">7</span></li> -->
+			<li><span id="btn06">Mobile</span></li>
+			<li><span id="btn07">potfolio</span></li>
+			<li><span id="btn08">Contact</span></li>
 		</ul>
 	</div>
 </body>

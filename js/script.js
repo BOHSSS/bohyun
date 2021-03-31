@@ -6,7 +6,7 @@ $(function(){
 	var options = {
 		'speed': 500,
 		'initTop': 250, //초기탭메뉴 위치 top에서 아래로 250
-		'alwaysTop':false, //항상따라다니도록, true는 고정
+		'alwaysTop':true, //항상따라다니도록, true는 고정
 		'default_x':'#wrap' //가로축, 레이아웃이 가운데 정렬 일때 레이어가 붙는 아이디값
 	}
 	
@@ -22,19 +22,19 @@ $(function(){
 		$('html, body').animate({scrollTop:$('#profile').offset().top},800);
 	});
 	$('#btn03').click(function(){
-		$('html, body').animate({scrollTop:$('#mobile').offset().top},800);
+		$('html, body').animate({scrollTop:$('#css').offset().top},800);
 	});
 	$('#btn04').click(function(){
-		$('html, body').animate({scrollTop:$('#adaptive01').offset().top},800);
+		$('html, body').animate({scrollTop:$('#responsive').offset().top},800);
 	});
 	$('#btn05').click(function(){
-		$('html, body').animate({scrollTop:$('#shopping').offset().top},800);
+		$('html, body').animate({scrollTop:$('#jQuery').offset().top},800);
 	});
 	$('#btn06').click(function(){
-		$('html, body').animate({scrollTop:$('#graphic').offset().top},800);
+		$('html, body').animate({scrollTop:$('#potfolio').offset().top},800);
 	});
 	$('#btn07').click(function(){
-		$('html, body').animate({scrollTop:$('#epilogue').offset().top},800);
+		$('html, body').animate({scrollTop:$('#contact').offset().top},800);
 	});
 	
 	
