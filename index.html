@@ -4,34 +4,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>bohyun's potfolio</title>
-	<link rel="stylesheet" href="css/style2.css"/>
-	<link rel="shortcut icon" href="favicon.ico"/>
-	
+	<link rel="stylesheet" href="css/style2.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+
 	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script src='js/jquery.ba-throttle-debounce.js'></script>
-    <script src="js/jquery.easing.compatibility.js"></script>
+	<script src="js/jquery.easing.compatibility.js"></script>
 
 	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery.Floater.js"></script>
-    <script src="js/swiper.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/script2.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
 	<script type="text/javascript" src="js/typed.js"></script>
 
 	<script type="text/javascript">
-		function bookmark(){
-			window.external.AddFavorite('https://bohsss.github.io/bohyun/','bohyun Portfolio');
+		function bookmark() {
+			window.external.AddFavorite('https://bohsss.github.io/bohyun/', 'bohyun Portfolio');
 		}
 	</script>
 
 </head>
+
 <body>
 	<div id="wrap">
 		<div id="frame">
 			<div class="top">
-				<h1 class="name"><a href="index.html">Sabo</a></h1> 
+				<h1 class="name"><a href="index.html">Sabo</a></h1>
 			</div>
 			<div class="left">
 				<div class="menuBtn">
@@ -89,18 +91,19 @@
 			<div class="bottom">
 				<p class="ver">Last Update 2021.03.29&nbsp;&nbsp;|&nbsp;&nbsp;Responsive Web</p>
 			</div>
-		</div> <!--id="frame"-->
+		</div>
+		<!--id="frame"-->
 
 		<div id="header">
 			<div id="menuWrap">
 				<div id="menu" class="ph-heart-nav nav cf">
-					<a href="#main"></a>
-					<a href="#profile">profile</a>
-					<a href="#css">css</a>
-					<a href="#responsive">responsive</a>
-					<a href="#jQuery">jQuery</a>
-					<a href="#potfolio">potfolio</a>
-					<a href="#contact">contact</a>
+					<a href="#main" class="page"></a>
+					<a href="#profile" class="page">profile</a>
+					<a href="#css" class="page">css</a>
+					<a href="#responsive" class="page">responsive</a>
+					<a href="#jQuery" class="page">jQuery</a>
+					<a href="#potfolio" class="page">potfolio</a>
+					<a href="#contact" class="page">contact</a>
 					<div class="effect"></div>
 				</div>
 
@@ -125,18 +128,18 @@
 						<span class="type"></span>
 					</div>
 					<div class="main_img_wrap">
-						<div class="main_img"> 
+						<div class="main_img">
 							<img src="images/main_img.png" alt="">
 						</div>
 					</div>
 					<div class="scrollIcon">
 						<a href="#profile">
-						   <span></span>
+							<span></span>
 							<p>Scroll Down</p>
 						</a>
 					</div>
-					
-				</div>	
+
+				</div>
 			</div>
 			<div id="profile" class="mn">
 				<div class="profile_wrap">
@@ -152,7 +155,7 @@
 						<div class="birth">
 							<p>
 								<h3>BIRTH</h3>
-								1998.08.13 
+								1998.08.13
 							</p>
 						</div>
 						<div class="cer">
@@ -172,73 +175,22 @@
 							<p><span>2020.08 ~ 2020.12</span> '예모마일' 쇼핑몰 웹 배너 </p>
 						</div>
 						<div class="skill">
-							<div id="PROFILE" class="mn">
-								<div id="profile_box">
+							<div id="skill" class="mn">
+								<div id="skill_box">
 									<div class="pro4">
 										<h3>SKILL</h3>
-										<!-- <div class="circle-wrap">	
-										  <figure class="chart" data-percent="90">
-											 <svg width="110" height="110">
-											   <circle class="outer" cx="95" cy="55" r="48" transform="rotate(-90, 75, 75)" />
-											 </svg>
-											 <div></div>
-											 <img class="#" src="images/profile_html.png" alt="html"/>
-											 <br>
-											 <p>90%</p>
-										   </figure>
-										   
-										   <figure class="chart" data-percent="90">
-											 <svg width="110" height="110">
-											   <circle class="outer" cx="95" cy="55" r="48" transform="rotate(-90, 75, 75)" />
-											 </svg>
-											 <div></div>
-											 <img class="#" src="images/profile_css.png" alt="css"/>
-											<br>
-											 <p>90%</p>
-										   </figure>
-										   
-										   <figure class="chart" data-percent="80">
-											 <svg width="110" height="110">
-											   <circle class="outer" cx="95" cy="55" r="48" transform="rotate(-90, 75, 75)" />
-											 </svg>
-											 <div></div>
-											 <img class="#" src="images/profile_js.png" alt="js"/>
-											 <br>
-											 <p>80%</p>
-										   </figure>
-										   
-										   <figure class="chart ct" data-percent="80">
-											 <svg width="110" height="110">
-											   <circle class="outer" cx="95" cy="55" r="48" transform="rotate(-90, 75, 75)" />
-											 </svg>
-											 <div></div>
-											 <img class="#" src="images/profile_psd.png" alt="psd"/>
-											 <br>
-											 <p>80%</p>
-										   </figure>
-										   
-										   <figure class="chart cl ct" data-percent="80">
-											 <svg width="110" height="110">
-											   <circle class="outer" cx="95" cy="55" r="48" transform="rotate(-90, 75, 75)" />
-											 </svg>
-											 <div></div>
-											<img class="#" src="images/profile_ai.png" alt="ai"/>
-											 <br>
-											 <p>80%</p>
-										   </figure>
-										   
-										</div>  -->
+										
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="profile_contents">
-						<h1>CONTENTS</h1>
+						<h2>CONTENTS</h2>
 						<div class="cont1">
 							<div class="cont1_img"></div>
 							<div class="cont1_txt">
-								<h3>01.</h3> 
+								<h3>01.</h3>
 								<h4>Gargreen <span>css</span></h4>
 								<p>UI / UX Design & Publishing </p>
 							</div>
@@ -246,7 +198,7 @@
 						<div class="cont2">
 							<div class="cont2_img"></div>
 							<div class="cont2_txt">
-								<h3>02.</h3> 
+								<h3>02.</h3>
 								<h4>Genesis <span>responsible</span></h4>
 								<p>제네시스 사이트를 리디자인 및 퍼블리싱 하였습니다.</p>
 								<div class="cont_more"></div>
@@ -255,7 +207,7 @@
 						<div class="cont3">
 							<div class="cont3_img"></div>
 							<div class="cont3_txt">
-								<h3>03.</h3> 
+								<h3>03.</h3>
 								<h4>Etude <span>responsible</span></h4>
 								<p>에뛰드 사이트를 리디자인 및 퍼블리싱 하였습니다.</p>
 								<div class="cont_more"></div>
@@ -264,7 +216,7 @@
 						<div class="cont4">
 							<div class="cont4_img"></div>
 							<div class="cont4_txt">
-								<h3>04.</h3> 
+								<h3>04.</h3>
 								<h4> Seoul Museum of History<span> jquery</span></h4>
 								<p>제네시스 사이트를 리디자인 및 퍼블리싱 하였습니다.</p>
 								<div class="cont_more"></div>
@@ -272,33 +224,47 @@
 						</div>
 					</div>
 				</div>
-				
-				
-				<!-- <h1>임시 홈페이지</h1>
-				<div class="cir_wrap">
-					
-					<a href="../potfolio/project/genesis/index.html" target="_blank">
-						<div class="cir">
-							<p>제네시스</p>
-						</div>
-					</a>
-					<a href="../potfolio/project/etude/index.html" target="_blank">
-						<div class="cir">
-							<p>에뛰드</p>
-						</div>
-					</a>
-					<a href="../potfolio/project/lush/index.html" target="_blank">
-						<div class="cir">
-							<p>러쉬</p>
-						</div>
-					</a>
-				</div> -->
 			</div>
+			
+			<!--page2 css-->
 			<div id="css" class="mn">
-
+				<div id="scroll">
+					<div id="css_box_wrap">
+						<div class="css_text">
+							<h2>CSS</h2>
+						</div>
+						<div class="css_device">
+							<div class="pc_device">
+								<img src="images/macbook.png" alt="맥북">
+							</div>
+							<div class="pc_main_page">
+								<a href="project/Gargreen/index.html" target="_blank">
+									<img src="images/gagreen_main.jpg" alt="가그린메인">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div id="responsive" class="mn">
 
+			<div id="responsive" class="mn">
+				<div id="scroll">
+					<div id="css_box_wrap">
+						<div class="css_text">
+							<h2>CSS</h2>
+						</div>
+						<div class="css_device">
+							<div class="pc_device">
+								<img src="images/macbook.png" alt="맥북">
+							</div>
+							<div class="pc_main_page">
+								<a href="project/Gargreen/index.html" target="_blank">
+									<img src="images/gagreen_main.jpg" alt="가그린메인">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="jQuery" class="mn">
 
@@ -324,5 +290,18 @@
 		</ul>
 	</div>
 </body>
+<script>
+	
+	document.querySelectorAll(".page").forEach((e)=>{
+		e.addEventListener("click", (event)=>{
+			document.querySelectorAll(".page").forEach((test)=>{
+				test.style.color = "#000000";
+			})
+			event.target.style.color = "#c6342e";
+			event.target.style.effect = "left:16.5%";
+		})
+	})	
+
+</script>
 
 </html>

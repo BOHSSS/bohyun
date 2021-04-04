@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+JP:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+ul,ol{list-style: none;}
+ul li a{text-decoration: none;}
+h1{display: none;}
+/*-------------------레이아웃--------------------*/
+
+/*--------------header---------------*/
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5em;
+    color: #83c3c5;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 20px;
+}
+nav ul ul{ /*서브메뉴 =.drop-down*/
+    width: 100%;
+    height: 200px;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #5f9496;
+}
+nav ul a{
+    text-align: center;
+    color: #83c3c5;
+}
+nav > ul > li:hover ul{
+    display: block;
+}
+nav > ul > li a:hover{
+    color:#5f9496;
+}
+/*로고*/
+nav .logo{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.8em;
+    padding-top: 15px;
+    text-shadow: 2px 2px lightblue;
+    color:#5f9496;
+    cursor: pointer;
+}
+/*로그인,샵,조인*/
+nav .member{
+    display: flex;
+    padding-top: 15px;
+}
+nav .member div{
+    margin: 0 auto;
+    margin-right: 0;
+}
+nav .member img{
+    transform:scale(1);        /*  default */
+    -webkit-transform:scale(1);/*  크롬 */
+    -moz-transform:scale(1);   /* FireFox */
+    -o-transform:scale(1);     /* Opera */
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션*/
+}
+nav .member img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+                      
+/*---------------nav----------------*/
+/* #header ul:hover + nav{
+    display: block;
+    height: 210px;
+}
+nav:hover{
+    display: block;
+    height: 210px;
+}
+nav{
+    display: none; 
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 0;
+    background-color: #5f9496;
+    z-index: 1; 
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+#nav .brand_menu{
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content : center;
+}
+#nav .brand_menu .menu{
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+}
+#nav .brand_menu li{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2em; 
+    margin-left: 40px;
+    margin-top: 20px;
+    line-height: 2;
+    opacity: 0.7;
+}
+#nav .brand_menu li a{
+    color: #ffffff;
+}
+#nav .brand_menu .story{
+    width: 75%;
+    height: 100%;
+    display: flex; 
+    justify-content : center;
+}
+#nav .brand_menu .story li{
+    text-align: center;
+}
+#nav .brand_menu img{
+    width: 300px;
+    height: 130px;
+    margin-top: 10px;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+#nav .brand_menu img:hover,#nav .brand_menu li:hover{
+	opacity: 1.0;
+} */
+              
+/*--------------banner---------------*/
+#main_banner{
+    background-color: #83c3c5;
+    width: 100%;
+    height: 700px;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/*배너 이미지*/
+#main_banner .main{
+    width: 600px;
+    margin: 0 auto;
+}
+#main_banner .main img{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+/*배너 텍스트*/
+#main_banner .text{
+    text-shadow: 2px 2px lightblue;
+}
+#main_banner .text li:first-child{
+    font-size: 2.5em;
+    position: absolute;
+    top: 370px;
+    right: 500px;
+    text-shadow: 4px 4px lightblue;
+}
+#main_banner .text li:nth-child(2){
+    font-size: 1.4em;
+    font-weight: bold;
+    position: absolute;
+    top: 450px;
+    right: 480px;  
+}
+#main_banner .text li:last-child{
+    font-size: 1.4em;
+    font-weight: bold;
+    position: absolute;
+    top: 490px;
+    right: 430px;  
+}
+              
+/*-----------main_brand-------------*/
+#main_brand{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    
+}
+.title{
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 150px;
+    height: 50px;
+    text-shadow: 3px 3px white;
+    font-size: 2.3em;
+    color: #83c3c5;
+    padding: 10px;
+    margin-left: 20px;
+}
+.article1>.box{
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: turquoise;
+}
+.article1>.box > div{
+    font-size: 1.5em;
+    background-color: violet;
+    position: absolute;
+    top: 1000px;
+}
+.article1>.bo{
+    width: 300px;
+    height: 400px;
+    background-color: turquoise;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+.article1{
+    display: flex;
+}
+#main_brand > .box{
+    width: 400px;
+    height: 400px;
+    background-color: violet;
+}
+.vid > video{
+    float: right;
+    width: 400px;
+    background-color: tomato;
+}
+              
+/*----------main_product-------------*/
+#main_product{   
+    width: 1200px;
+    height: 600px;
+    background-color: greenyellow;
+    margin: 0 auto;
+}
+
+#sub_product{
+    width: 1200px;
+    height: 600px;
+    background-color: yellow;
+    margin: 0 auto;
+}  
+
+              
+/*-------------footer--------------*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #b7cbcc;
+}

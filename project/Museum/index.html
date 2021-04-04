@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>서울시 역사 박물관</title>
+	<link rel="stylesheet" href="css/style2.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>	
+
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.Floater.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/banner_script.js"></script>
+
+	<script type="text/javascript" src="js/tab_script.js"></script>
+
+		<script src="js/jquery.flip.min.js"></script>
+	
+	<script>
+		$(function(){
+	$("#circle").flip({
+		axis: "y", //중심축
+		reverse: true, //역,전환
+		trigger: "hover" //마우스올렸을때
+	});
+});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header_wrap">  
+			<div id="header_fixed">
+				<!--공지사항 배너-->
+				<div id="top_notice_wrap">
+					<div id="top_notice">
+						<div>
+							<a href="https://www.seoul.go.kr/main/index.jsp" class="seoul_logo"><img src="img/notice_seoul_logo.png" alt="서울로고"></a>
+						</div>
+						<div class="notice1">
+							<h3><i class="fas fa-volume-up"></i></h3>
+							<ul class="sub_text">
+								<li style="top:0;">
+									<a href="#" class="data">전동킥보드, 오토바이, 자전거는 이젠 보도에서 내려가 보행자를 배려한 안전운행을 해주세요.</a>
+								</li>
+								<li>
+									<a href="#" class="data">서울시, 시민 품으로 돌아온 6개 고가하부 어떻게 즐기지? 사전예약 관람 및 온라인 전시</a>
+								</li>    
+								<li>
+									<a href="#" class="data">랜선타고 시민과 함께하는 '서울먹거리문화축제'에 참여해주세요.</a>
+								</li>                     
+							</ul>
+	  
+						</div>
+					</div>
+				</div>
+				<div id="header">
+					<!--탑 gnb 메뉴-->
+					<div id="top_gnb_wrap">
+						<div class="top_gnb_left">
+							<ul class="top_logo">
+								<h1 class="logo">
+									<a href="index.html"><img src="img/logo.png" alt="logo"/></a>
+								</h1>            
+							</ul>
+						</div>
+						<div class="top_gnb_right">
+							<ul class="top_gnb">
+								<li><a href="#">로그인</a></li> 
+								<li><a href="#">회원가입</a></li>
+							</ul>  
+							<ul class="top_sns">
+								<li class="sns1"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+								<li class="sns2"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+								<li class="sns3"><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+								<li class="sns4"><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+							</ul>  
+							<ul class="top_search">
+								<li>
+									<div class="search">
+										<form action="#">
+											<input type="text" placeholder="검색어를 입력해주세요.">
+											<button class="search_btn">
+												<i class="fas fa-search"></i>
+											</button>
+										</form>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!--탑 메인 메뉴-->
+					<nav id="top_nav_wrap">
+						<div class="nav">
+							<div class="drop_bg"><span></span></div>
+							<div class="bg_menu">
+								<ul class="depth1">
+									<li>
+										<a href="#"><span>박물관 이용</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">오시는 길</a></li>
+												<li><a href="#">관람 예약 안내</a></li>
+												<li><a href="#">시설 예약 안내</a></li>
+												<li><a href="#">자주 하는 질문</a></li>
+												<li><a href="#">멤버십</a></li>
+												<li><a href="#">사이트 맵</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span>전시</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">전시 일정</a></li>
+												<li><a href="#">기획 전시</a></li>
+												<li><a href="#">상설 전시</a></li>
+												<li><a href="#">기증 유물 전시</a></li>
+												<li><a href="#">야외 전시</a></li>
+												<li><a href="#">온라인 전시관</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span>교육</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">교육 일정</a></li>
+												<li><a href="#">교육 예약</a></li>
+												<li><a href="#">교육 자료</a></li>
+												<li><a href="#">온라인 교육</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span>유물</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">소장 유물 정보</a></li>
+												<li><a href="#">유물 구입</a></li>
+												<li><a href="#">유물 기증</a></li>
+												<li><a href="#">보존 과학</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span>학술▪자료</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">발간 도서</a></li>
+												<li><a href="#">서울 역사 아카이브</a></li>
+												<li><a href="#">온라인 학술행사</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span>문화행사</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">행사 소개</a></li>
+												<li><a href="#">행사 일정</a></li>
+												<li><a href="#">문화 행사</a></li>
+												<li><a href="#">온라인 문화행사</a></li>
+												<li><a href="#">온라인 영화제</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#"><span>열린 마당</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">알림</a></li>
+												<li><a href="#">박물관 일정</a></li>
+												<li><a href="#">소식지</a></li>
+												<li><a href="#">세뮤 TV</a></li>
+												<li><a href="#">동영상 자료</a></li>
+												<li><a href="#">행정 자료</a></li>
+												<li><a href="#">참여 마당</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="li_last"><a href="#"><span>박물관 소개</span></a>
+										<div class="sub_depth">
+											<ul class="depth2">
+												<li><a href="#">관장 인사말</a></li>
+												<li><a href="#">설립 목적 / 비전</a></li>
+												<li><a href="#">박물관 로고 </a></li>
+												<li><a href="#">박물관 연혁</a></li>
+												<li><a href="#">조직 . 직원</a></li>
+												<li><a href="#">분관 소개</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>      
+						</div> <!-- class="nav" -->
+					</nav>
+				</div> <!-- id="header" -->
+			</div> <!--  id="header_fixed" -->
+		</header>
+
+		<div id="contents">
+			<!--슬라이드 배너-->
+			<div id="main" class="mn">
+				<div id="main_slide_wrap" class="mn">
+					<div id="brandVisual">
+						<ul>
+							<li class="visual_0"><a href="#">배너이미지1</a></li>
+							<li class="visual_1"><a href="#">배너이미지2</a></li>
+							<li class="visual_2"><a href="#">배너이미지3</a></li>
+						</ul>
+					</div>
+					<div class="btnImg">
+						<img src="img/chevron-left-solid.png" class="prev fl" width="30" height="50" alt="" />
+						<img src="img/chevron-right-solid.png" class="next fr" width="30" height="50" alt=""/>
+
+					</div>
+					<ul id="buttonList">
+						<li class="on"><a href="#">배너1</a></li>
+						<li><a href="#">배너2</a></li>
+						<li><a href="#">배너3</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--cont1-->
+			<div id="cont1" class="mn">
+				<div class="tapMenu">
+					<div class="tabSet">
+						<ul class="tabs">
+							<li class="fl"><a href="#play1" class="tabOn">전체 공연</a></li>
+							<li class="fl"><a href="#play2">VR 온라인 전시관</a></li>
+							<li class="fl"><a href="#play3">콘서트</a></li>
+						</ul>
+						<div class="plays">
+							<div class="play" id="play1">
+								<ul class="slide1 cf">
+									<li class="fl"><img src="img/musical_01.png" alt="musical_01"/></li>
+									<li class="fl"><img src="img/musical_02.png" alt="musical_02"/></li>
+									<li class="fl"><img src="img/concert_01.png" alt="concert_01"/></li>
+									<li class="fl"><img src="img/concert_02.png" alt="concert_02"/></li>
+									<li class="fl"><img src="img/etc_01.png" alt="etc_01"/></li>
+								</ul>	
+								<div class="prev1_2">
+									<img src="img/left_g.png" class="prev1_1" width="30" height="50" alt="left1"/>			
+								</div>
+								<div class="next1_2">
+									<img src="img/right_g.png" class="next1_1" width="30" height="50" alt="right1"/>
+								</div>						
+							</div>					
+							<div class="play" id="play2">
+								<ul class="slide2 cf">
+									<li class="fl"><img src="img/vr_img15.jpg" alt="musical_01"/></li>
+									<li class="fl"><img src="img/vr_img17.png" alt="musical_02"/></li>
+									<li class="fl"><img src="img/vr_img18.jpg" alt="concert_01"/></li>
+									<li class="fl"><img src="img/vr_img19.jpg" alt="concert_02"/></li>
+									<li class="fl"><img src="img/vr_img20.png" alt="etc_01"/></li>
+								</ul>
+								<div class="prev2_2">
+									<img src="img/left_g.png" class="prev2_1" width="30" height="50" alt="left2"/>				
+								</div>
+								<div class="next2_2">
+									<img src="img/right_g.png" class="next2_1" width="30" height="50" alt="right2"/>
+								</div>
+							</div>
+							<div class="play" id="play3">
+								<ul class="slide3 cf">
+									<li class="fl"><img src="img/concert_01.png" alt="concert_01"/></li>
+									<li class="fl"><img src="img/concert_02.png" alt="concert_02"/></li>
+									<li class="fl"><img src="img/concert_03.png" alt="concert_03"/></li>
+									<li class="fl"><img src="img/concert_04.png" alt="concert_04"/></li>
+									<li class="fl"><img src="img/concert_05.png" alt="concert_05"/></li>
+								</ul>
+								<div class="prev3_2">
+									<img src="img/left_g.png" class="prev3_1" width="30" height="50" alt="left3"/>				
+								</div>
+								<div class="next3_2">
+									<img src="img/right_g.png" class="next3_1" width="30" height="50" alt="right3"/>
+								</div>
+							</div>
+							<div class="play" id="play4">
+								<ul class="slide4 cf">
+									<li class="fl"><img src="img/etc_01.png" alt="etc_01"/></li>
+									<li class="fl"><img src="img/etc_02.png" alt="etc_02"/></li>
+									<li class="fl"><img src="img/etc_03.png" alt="etc_03"/></li>
+									<li class="fl"><img src="img/etc_04.png" alt="etc_04"/></li>
+									<li class="fl"><img src="img/etc_05.png" alt="etc_05"/></li>
+								</ul>
+								<div class="prev4_2">
+									<img src="img/left_g.png" class="prev4_1" width="30" height="50" alt="left4"/>				
+								</div>
+								<div class="next4_2">
+									<img src="img/right_g.png" class="next4_1" width="30" height="50" alt="right4"/>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>  <!-- tepMenu -->
+			</div>
+			<!-- cont2 이용안내 -->
+			<div id="cont2" class="mn">
+				<div id="cont2_wrap">
+					<div class="cont2_tit">
+						<h1>이용안내</h1>
+					</div>
+					<div class="cont2_con">
+						<div class="cont_time">
+							<div class="item">
+								<div class="time_info">
+									<strong class="ope_tit">관람시간</strong>
+									<div class="time_ow">
+										<ul>
+											<li>
+												<strong class="txt">주중 · 주말 동일&nbsp;:&nbsp;</strong>
+												<span class="time">10:00 ~ 18:00</span>
+											</li>
+										</ul>
+										<p></p>
+									</div>
+								</div>
+							</div>	
+							<div class="item">
+								<div class="time_info">
+									<strong class="ope_tit">관람료</strong>
+									<div class="time_ow">
+										<ul>
+											<li>
+												<span class="time">무료</span>
+											</li>
+										</ul>
+										<p></p>
+									</div>
+								</div>
+							</div>	
+							<div class="item bor_n">
+								<div class="time_info">
+									<strong class="ope_tit">휴관일</strong>
+									<div class="time_ow">
+										<ul>
+											<li>
+												<span class="time">1월 1일, 매주 월요일</span>
+											</li>
+											<li class="notice_txt">
+												※ 월요일이「관공서의 공휴일에 관한 규정」제2조에 따른 공휴일일 때에는 휴관하지 아니함
+											</li>
+										</ul>
+										<p>
+
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cont_time">
+							<div class="item">
+								<div class="time_info">
+									<strong class="ope_tit">관람방법</strong>
+									<div class="time_ow">
+										<ul>
+											<li>
+												<strong class="txt">개인 자유관람(단체관람 불가)</strong>
+												<span class="time">
+													방역수칙 준수<br>
+													- 마스크 착용 의무화<br>
+													- 사회적 거리두기(1~2m) 준수<br>
+													- 입장시 손 세정제 소독<br>
+													- 체온측정(37.5℃ 미만 입장)<br>
+													- 출입자 신원확인 : 전자출입명부(QR코드) 혹은 수기접수<br>
+											</li>
+											<li class="notice_txt">
+												※ 의심증상 확인 및 방역 비협조 시 입장이 거부될 수 있습니다</span>
+											</li>
+										</ul>
+										<p>
+
+										</p>
+									</div>
+								</div>
+								<div class="item bor_n">
+									<div class="time_info">
+										<strong class="ope_tit">주차장 <br>이용안내	</strong>
+										<div class="time_ow">
+											<ul>
+												<li>
+													<span class="time">차요금 및 운영시간 등은 박물관이용 > 오시는 길 > 주차안내 메뉴를 참고하시기 바랍니다.</span>
+												</li>
+											</ul>
+											<p>
+	
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="cont2_cir">
+						<div id="circle">
+							<div class="logo1 front"></div>
+							<div class="logo2 back"></div>
+							<div>공지사항</div>
+						</div>
+						<div id="circle">
+							<div class="logo1 front"></div>
+							<div class="logo2 back"></div>
+							<div>공지사항</div>
+						</div>
+						<div id="circle">
+							<div class="logo1 front"></div>
+							<div class="logo2 back"></div>
+						</div>
+						<div id="circle">
+							<div class="logo1 front"></div>
+							<div class="logo2 back"></div>
+						</div>
+						<div id="circle">
+							<div class="logo1 front"></div>
+							<div class="logo2 back"></div>
+						</div>
+						<div id="circle">
+							<div class="logo1 front"></div>
+							<div class="logo2 back"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="cont3" class="mn">
+
+			</div>
+			<div id="cont4" class="mn">
+
+			</div>
+			<div id="cont5" class="mn">
+
+			</div>
+			<div id="cont6" class="mn">
+
+			</div>
+		</div>
+	</div><!-- id="wrap" -->
+	
+	<!--위치 이동 버튼-->
+	<div id="floatdiv">
+		<ul>
+			<li class="active"><span id="btn01"></span></li>
+			<li><span id="btn02">전시</span></li>
+			<li><span id="btn03">이용안내</span></li>
+			<li><span id="btn04">알림</span></li>
+			<li><span id="btn05">교육/행사</span></li>
+			<li><span id="btn06"></span></li>
+			<li><span id="btn07"></span></li>
+		</ul>
+	</div>
+	
+</body>
+
+</html>
