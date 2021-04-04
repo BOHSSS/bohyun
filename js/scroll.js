@@ -1,6 +1,6 @@
 $(function(){
 	//컴퓨터이미지 호버하면 자동 스크롤
-	$('.css_device .pc_main_page').hover(function(){
+	$('.device .main_page').hover(function(){
 		var ah = $(this).find('a').innerHeight();
 		var img = $(this).find('img');
 		var imgh = $(this).find('img').innerHeight();
@@ -16,3 +16,5 @@ $(function(){
 	});
 	
 });
+
+

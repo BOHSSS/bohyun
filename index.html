@@ -89,7 +89,7 @@
 			</div>
 			<div class="right"></div>
 			<div class="bottom">
-				<p class="ver">Last Update 2021.03.29&nbsp;&nbsp;|&nbsp;&nbsp;Responsive Web</p>
+				<p class="ver">Last Update 2021.04.04&nbsp;&nbsp;|&nbsp;&nbsp;Potfolio Web</p>
 			</div>
 		</div>
 		<!--id="frame"-->
@@ -144,48 +144,97 @@
 			<div id="profile" class="mn">
 				<div class="profile_wrap">
 					<div class="profile_img">
-						<h2>PROFILE</h2>
+						<h2></h2>
 						<img src="images/profile_img.jpg" alt="">
 					</div>
 					<div class="profile_text">
-						<div class="name">
-							<h3>NAME</h3>
-							<p>사보현</p>
-						</div>
-						<div class="birth">
-							<p>
-								<h3>BIRTH</h3>
-								1998.08.13
-							</p>
-						</div>
-						<div class="cer">
-							<h3>CERTIFICATION</h3>
-							<p><span>2020.11</span> 컴퓨터 활용능력 1급</p>
-							<p><span>2020.01</span> GTQi 일러스트 1급</p>
-							<p><span>2019.09</span> GTQ 포토샵 1급</p>
-						</div>
-						<div class="edu">
-							<h3>EDUCATION</h3>
-							<p><span>2020.11 ~ 2021.04</span> 그린컴퓨터아카데미 UI/UX 웹디자인(웹퍼블리셔) 과정 수료</p>
-							<p><span>2017.03 ~ 2021.02</span> 성결대학교 미디어소프트웨어학과 졸업</p>
-							<p><span>2014.03 ~ 2016.02</span> 평촌고등학교 졸업</p>
-						</div>
-						<div class="career">
-							<h3>CAREER</h3>
-							<p><span>2020.08 ~ 2020.12</span> '예모마일' 쇼핑몰 웹 배너 </p>
-						</div>
-						<div class="skill">
-							<div id="skill" class="mn">
-								<div id="skill_box">
-									<div class="pro4">
-										<h3>SKILL</h3>
-										
-									</div>
-								</div>
+						<div class="nameBox firstBox">
+							<div class="nameTitle">
+								<h3>NAME</h3>
+							</div>
+							<div class="nameContent">
+								<p>사보현</p>
 							</div>
 						</div>
+						<div class="nameBox">
+							<div class="nameTitle">
+								<h3>BIRTH</h3>
+							</div>
+							<div class="nameContent">
+								<p>1998.08.13</p>
+							</div>
+						</div>
+						<div class="lineBox"></div>	
+						<div class="eduBox">
+							<div class="eduTitle">
+								<h3>EDUCATION</h3>
+							</div>
+							<div class="eduContent">
+								<ul>
+									<li>
+										<strong>20.11 ~ 21.04</strong> &nbsp;&nbsp;그린 컴퓨터 아카데미 UI/UX 웹디자인(웹 퍼블리셔) 과정 수료
+									</li>
+									<li>
+										<strong>17.03 ~ 21.02</strong> &nbsp;&nbsp;성결대학교 미디어소프트웨어학부(공학사)졸업 
+									</li>
+									<li>
+										<strong>14.03 ~ 17.02</strong> &nbsp;&nbsp;평촌고등학교 졸업
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="eduBox">
+							<div class="eduTitle">
+								<h3>CERTIFICATION</h3>
+							</div>
+							<div class="eduContent">
+								<ul>
+									<li>
+										<strong>20.11</strong> &nbsp;&nbsp;컴퓨터 활용 능력 1급 
+									</li>
+									<li>
+										<strong>20.01</strong> &nbsp;&nbsp;GTQI 일러스트 1급
+									</li>
+									<li>
+										<strong>19.09</strong> &nbsp;&nbsp;GTQ 포토샵 1급
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="eduBox careerBox">
+							<div class="eduTitle">
+								<h3>CAREER</h3>
+							</div>
+							<div class="eduContent careerContent">
+								<ul>
+									<li>
+										<strong>20.08 ~ 20.12</strong> &nbsp;&nbsp;쇼핑몰 '예모마일' 배너 디자인  
+									</li>
+									<li>
+										<strong>21.01</strong> &nbsp;&nbsp;성결대학교 창업 아이디어 경진대회 대상
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="eduBox">
+							<div class="eduTitle">
+								<h3>SKILL</h3>
+							</div>
+							<div class="skillContent ">
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+								<div class="skill_icon"></div>
+							</div>
+						</div>	
+						
+						<div class="skillBox"></div>
 					</div>
-					<div class="profile_contents">
+					<div class="profile_contents" style="display: none;">
 						<h2>CONTENTS</h2>
 						<div class="cont1">
 							<div class="cont1_img"></div>
@@ -228,47 +277,156 @@
 			
 			<!--page2 css-->
 			<div id="css" class="mn">
-				<div id="scroll">
-					<div id="css_box_wrap">
-						<div class="css_text">
-							<h2>CSS</h2>
-						</div>
-						<div class="css_device">
-							<div class="pc_device">
-								<img src="images/macbook.png" alt="맥북">
+				<div class="container">
+					<ul class="tabs">
+						<li id="genesisBtn" class="tab1">01 GENESIS</li>
+						<li id="gagreenBtn" class="tab2">02 GAGREEN</li>
+					</ul>
+					<div id="scroll">
+						<div id="css_box_wrap">
+							<div class="css_text" id="genesisBox">
+								<h2>01 GENESIS</h2>
+								<div class="css_text_cont">
+									<div>
+										<p>Jan 2021</p>
+									</div>
+									<div>
+										<h3>concept</h3>
+										<p>제네시스 홈페이지 리뉴얼</p>
+									</div>
+									<div>
+										<h3>work</h3>
+										<p>기획안, 와이어프레임, 디자인 시안, 웹 프로토타입</p>
+									</div>
+									
+									<div class="sitemap_wrap">
+										<h3>sitiemap</h3>
+										<div class="sitemap_box">
+											<a href="project/Genesis/index.html" target="_blank">index</a>
+										</div>
+										<div class="sitemap_box">
+											<a href="project/Genesis/experience.html" target="_blank">sub1</a>
+										</div>
+										<div class="sitemap_box">
+											sub2
+										</div>
+									</div>
+									
+									<div class="more">
+										<a href="project/Genesis/index.html">더보기</a>
+									</div>
+								</div>
 							</div>
-							<div class="pc_main_page">
-								<a href="project/Gargreen/index.html" target="_blank">
-									<img src="images/gagreen_main.jpg" alt="가그린메인">
-								</a>
+							<div class="css_text" id="gagreenBox">
+								<h2>02 GAGREEN</h2>
+								<div class="css_text_cont">
+									<div>
+										<p>Jan 2021</p>
+									</div>
+									<div>
+										<h3>concept</h3>
+										<p>가그린 홈페이지 리뉴얼</p>
+									</div>
+									<div>
+										<h3>work</h3>
+										<p>기획안, 와이어프레임, 디자인 시안, 웹 프로토타입</p>
+									</div>
+									
+									<div class="sitemap_wrap">
+										<h3>sitiemap</h3>
+										<div class="sitemap_box">
+											<a href="project/Gargreen/index.html">index</a>
+										</div>
+									</div>
+									
+									<div class="more">
+										<a href="project/ Genesis/index.html">더보기</a>
+									</div>
+								</div>
+							</div>
+							<div class="device css_device">
+								<div class="pc_wrap">
+									<div class="pc_device">
+										<img src="images/macbook.png" alt="맥북">
+									</div>
+									<div class="main_page pc_main_page">
+										<a href="project/Genesis/index.html" target="_blank">
+											<img src="images/genesis_main.png" alt="제네시스메인" id="changeImg">
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>	
 			</div>
 
+			<!--page3 resonsive-->
 			<div id="responsive" class="mn">
 				<div id="scroll">
-					<div id="css_box_wrap">
-						<div class="css_text">
-							<h2>CSS</h2>
+					<div id="res_box_wrap">
+						<div class="res_text">
+							<h2>01 ETUDE</h2>
 						</div>
-						<div class="css_device">
-							<div class="pc_device">
-								<img src="images/macbook.png" alt="맥북">
+						<div class="device res_device">
+							<div class="pc_wrap">
+								<div class="pc_device">
+									<img src="images/macbook.png" alt="맥북">
+								</div>
+								<div class="main_page pc_main_page">
+									<a href="project/Etude/index.html" target="_blank">
+										<img src="images/etude_main.png" alt="에뛰드pc메인">
+									</a>
+								</div>
 							</div>
-							<div class="pc_main_page">
-								<a href="project/Gargreen/index.html" target="_blank">
-									<img src="images/gagreen_main.jpg" alt="가그린메인">
-								</a>
+							<div class="mobile_wrap">
+								<div class="mobile_device">
+									<img src="images/iphone.png" alt="아이폰">
+								</div>
+								<div class="main_page mobile_main_page">
+									<a href="project/Etude/index.html" target="_blank">
+										<img src="images/etude_mobile_main.png" alt="에뛰드모바일메인">
+									</a>
+								</div>
+							</div>
+							<div class="tablet_wrap">
+								<div class="tablet_device">
+									<img src="images/ipad.png" alt="아이패드">
+								</div>
+								<div class="main_page tablet_main_page">
+									<a href="project/Etude/index.html" target="_blank">
+										<img src="images/etude_tablet_main.png" alt="에뛰드태블릿메인">
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="jQuery" class="mn">
 
+			<div id="jQuery" class="mn">
+				<div id="scroll">
+					<div id="jquery_box_wrap">
+						<div class="jquery_text">
+							<h2>JQUERY</h2>
+						</div>
+						<div class="device css_device">
+							<div class="pc_wrap">
+								<div class="pc_device">
+									<img src="images/macbook.png" alt="맥북">
+								</div>
+								<div class="main_page pc_main_page">
+									<a href="project/Museum/index.html" target="_blank">
+										<img src="images/gagreen_main.jpg" alt="박물관메인">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
+
 			<div id="potfolio" class="mn">
 
 			</div>
@@ -301,6 +459,30 @@
 			event.target.style.effect = "left:16.5%";
 		})
 	})	
+
+
+	document.querySelector("#genesisBtn").addEventListener("click",(e)=>{
+		let changeImg = document.querySelector("#changeImg");
+		changeImg.src = "images/genesis_main.png";
+		document.querySelector("#gagreenBtn").style.borderBottom = "0px";
+		document.querySelector("#gagreenBtn").style.fontWeight = "400";
+		e.target.style.borderBottom = "3px solid #a23333";
+		e.target.style.fontWeight = "900"; 
+		document.querySelector("#gagreenBox").style.display = "none";
+		document.querySelector("#genesisBox").style.display = "block";
+		
+	})
+	
+	document.querySelector("#gagreenBtn").addEventListener("click",(e)=>{
+		let changeImg = document.querySelector("#changeImg");
+		changeImg.src = "images/gagreen_main.jpg";
+		document.querySelector("#genesisBtn").style.borderBottom = "0px";
+		document.querySelector("#genesisBtn").style.fontWeight = "400";
+		e.target.style.borderBottom = "3px solid #82cbc4";
+		e.target.style.fontWeight = "900";
+		document.querySelector("#gagreenBox").style.display = "block";
+		document.querySelector("#genesisBox").style.display = "none";
+	})
 
 </script>
 
