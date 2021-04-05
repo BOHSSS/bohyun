@@ -101,7 +101,7 @@
 					<a href="#profile" class="page">profile</a>
 					<a href="#css" class="page">css</a>
 					<a href="#responsive" class="page">responsive</a>
-					<a href="#jQuery" class="page">jQuery</a>
+					<a href="#jQuery" class="page">MOBIILE</a>
 					<a href="#potfolio" class="page">potfolio</a>
 					<a href="#contact" class="page">contact</a>
 					<div class="effect"></div>
@@ -285,7 +285,7 @@
 					<div id="scroll">
 						<div id="css_box_wrap">
 							<div class="css_text" id="genesisBox">
-								<h2>01 GENESIS</h2>
+								<h2><span>01</span> GENESIS</h2>
 								<div class="css_text_cont">
 									<div>
 										<p>Jan 2021</p>
@@ -318,7 +318,7 @@
 								</div>
 							</div>
 							<div class="css_text" id="gagreenBox">
-								<h2>02 GAGREEN</h2>
+								<h2><span>02</span> GAGREEN</h2>
 								<div class="css_text_cont">
 									<div>
 										<p>Jan 2021</p>
@@ -343,7 +343,7 @@
 										<a href="project/ Genesis/index.html">더보기</a>
 									</div>
 								</div>
-							</div>
+							</div>	
 							<div class="device css_device">
 								<div class="pc_wrap">
 									<div class="pc_device">
@@ -363,40 +363,97 @@
 
 			<!--page3 resonsive-->
 			<div id="responsive" class="mn">
-				<div id="scroll">
-					<div id="res_box_wrap">
-						<div class="res_text">
-							<h2>01 ETUDE</h2>
-						</div>
-						<div class="device res_device">
-							<div class="pc_wrap">
-								<div class="pc_device">
-									<img src="images/macbook.png" alt="맥북">
-								</div>
-								<div class="main_page pc_main_page">
-									<a href="project/Etude/index.html" target="_blank">
-										<img src="images/etude_main.png" alt="에뛰드pc메인">
-									</a>
+				<div class="container">
+					<ul class="tabs">
+						<li id="etudeBtn" class="tab1">01 ETUDE</li>
+						<li id="lushBtn" class="tab2">02 LUSH</li>
+					</ul>
+					<div id="scroll">
+						<div id="res_box_wrap">
+							<div class="res_text" id="etudeBox">
+								<h2><span>01</span> ETUDE</h2>
+								<div class="res_text_cont">
+									<div>
+										<p>Jan 2021</p>
+									</div>
+									<div>
+										<h3>concept</h3>
+										<p>에뛰드 홈페이지 리뉴얼</p>
+									</div>
+									<div>
+										<h3>work</h3>
+										<p>기획안, 와이어프레임, 디자인 시안, 웹 프로토타입</p>
+									</div>
+									
+									<div class="sitemap_wrap">
+										<h3>sitiemap</h3>
+										<div class="sitemap_box">
+											<a href="project/Etude/index.html" target="_blank">index</a>
+										</div>
+									</div>
+									
+									<div class="more">
+										<a href="project/Etude/index.html" target="_blank">더보기</a>
+									</div>
 								</div>
 							</div>
-							<div class="mobile_wrap">
-								<div class="mobile_device">
-									<img src="images/iphone.png" alt="아이폰">
+							<div class="res_text" id="lushBox">
+								<h2><span>02</span> LUSH</h2>
+								<div class="res_text_cont">
+									<div>
+										<p>Jan 2021</p>
+									</div>
+									<div>
+										<h3>concept</h3>
+										<p>러쉬 홈페이지 리뉴얼</p>
+									</div>
+									<div>
+										<h3>work</h3>
+										<p>기획안, 와이어프레임, 디자인 시안, 웹 프로토타입</p>
+									</div>
+									
+									<div class="sitemap_wrap">
+										<h3>sitiemap</h3>
+										<div class="sitemap_box">
+											<a href="project/Lush/index.html"  target="_blank">index</a>
+										</div>
+									</div>
+									
+									<div class="more">
+										<a href="project/Lush/index.html" target="_blank">더보기</a>
+									</div>
 								</div>
-								<div class="main_page mobile_main_page">
-									<a href="project/Etude/index.html" target="_blank">
-										<img src="images/etude_mobile_main.png" alt="에뛰드모바일메인">
-									</a>
+							</div>	
+							<div class="device res_device">
+								<div class="pc_wrap">
+									<div class="pc_device">
+										<img src="images/macbook.png" alt="맥북">
+									</div>
+									<div class="main_page pc_main_page">
+										<a href="project/Etude/index.html" target="_blank">
+											<img src="images/etude_main.png" alt="에뛰드pc메인" id="change_lush_pc">
+										</a>
+									</div>
 								</div>
-							</div>
-							<div class="tablet_wrap">
-								<div class="tablet_device">
-									<img src="images/ipad.png" alt="아이패드">
+								<div class="mobile_wrap">
+									<div class="mobile_device">
+										<img src="images/iphone.png" alt="아이폰">
+									</div>
+									<div class="main_page mobile_main_page">
+										<a href="javascript:void(window.open('project/etude/index.html','_blank','width=414, height=846','scrollbars=yes','resizable=no','toolbar=no'))" tadindex="1">
+											<img src="images/etude_mobile_main.png" alt="에뛰드모바일메인" id="change_lush_mo">
+										</a>
+									</div>
 								</div>
-								<div class="main_page tablet_main_page">
-									<a href="project/Etude/index.html" target="_blank">
-										<img src="images/etude_tablet_main.png" alt="에뛰드태블릿메인">
-									</a>
+								<div class="tablet_wrap">
+									<div class="tablet_device">
+										<img src="images/ipad.png" alt="아이패드">
+									</div>
+									<div class="main_page tablet_main_page">
+										<a href="javascript:void(window.open('project/etude/index.html','_blank','width=768, height=846','scrollbars=yes','resizable=no','toolbar=no'))" tadindex="1">
+											<img src="images/etude_tablet_main.png" alt="에뛰드태블릿메인" id="change_lush_ta">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -405,46 +462,114 @@
 			</div>
 
 			<div id="jQuery" class="mn">
-				<div id="scroll">
-					<div id="jquery_box_wrap">
-						<div class="jquery_text">
-							<h2>JQUERY</h2>
-						</div>
-						<div class="device css_device">
-							<div class="pc_wrap">
-								<div class="pc_device">
-									<img src="images/macbook.png" alt="맥북">
+				<div class="container">
+					<ul class="tabs">
+						<li id="yemomileBtn" class="tab1">01 YEMOMILE</li>
+						<li id="projectBtn" class="tab2">02 PROJECT</li>
+					</ul>
+
+					<div id="scroll">
+						<div id="jquery_box_wrap">
+							<div class="jquery_text" id="yemomileBox">
+								<h2><span>01</span> YEMOMILE</h2>
+								<div class="jquery_text_cont">
+									<div>
+										<p>Jan 2021</p>
+									</div>
+									<div>
+										<h3>concept</h3>
+										<p>제네시스 홈페이지 리뉴얼</p>
+									</div>	
+									<div>
+										<h3>work</h3>
+										<p>기획안, 와이어프레임, 디자인 시안, 웹 프로토타입</p>
+									</div>
+									
+									<div class="sitemap_wrap">
+										<h3>sitiemap</h3>
+										<div class="sitemap_box">
+											<a href="javascript:void(window.open('project/yemomile/index.html','_blank','width=414, height=846','scrollbars=yes','resizable=no','toolbar=no'))" tadindex="1">
+												index
+											</a>	
+										</div>
+									</div>
+									
+									<div class="more">
+										<a href="javascript:void(window.open('project/yemomile/index.html','_blank','width=414, height=846','scrollbars=yes','resizable=no','toolbar=no'))" tadindex="1">
+											더보기
+										</a>	
+									</div>
 								</div>
-								<div class="main_page pc_main_page">
-									<a href="project/Museum/index.html" target="_blank">
-										<img src="images/gagreen_main.jpg" alt="박물관메인">
-									</a>
+							</div>
+							<div class="jquery_text" id="projectBox">
+								<h2><span>02</span> PROJECT</h2>
+								<div class="jquery_text_cont">
+									
+									<div>
+										<br><br><br><br><br>
+										<p>April 2021 ~</p>
+									</div>
+									<div>
+										<h3>준비 중 입니다.</h3>
+									</div>
+									
+								</div>
+							</div>	
+							<div class="device jquery_device">
+								<div class="mobile_wrap">
+									<div class="mobile_device">
+										<img src="images/iphone.png" alt="아이폰">
+									</div>
+									<div class="main_page mobile_main_page">
+										<a href="javascript:void(window.open('project/yemomile/index.html','_blank','width=414, height=846','scrollbars=yes','resizable=no','toolbar=no'))" tadindex="1">
+											<img src="images/yemomil_main.png" alt="예모마일모바일메인" id="change_lush_mo">
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- <div id="scroll">
+						<div id="jquery_box_wrap">
+							<div class="jquery_text">
+								<h2>JQUERY</h2>
+							</div>
+							<div class="device css_device">
+								<div class="pc_wrap">
+									<div class="pc_device">
+										<img src="images/macbook.png" alt="맥북">
+									</div>
+									<div class="main_page pc_main_page">
+										<a href="project/Museum/index.html" target="_blank">
+											<img src="images/gagreen_main.jpg" alt="박물관메인">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
 
 
 			<div id="potfolio" class="mn">
-
+				<h3></h3>
 			</div>
-			<div id="contact" class="mn">
-
-			</div>
+			<!-- <div id="contact" class="mn">
+				
+			</div> -->
 		</div>
 	</div><!-- id="wrap" -->
 	<div id="floatdiv">
 		<ul>
-			<li class="active"><span id="btn01">Main</span></li>
-			<li><span id="btn02">Profile</span></li>
-			<li><span id="btn03">Css</span></li>
-			<li><span id="btn04">Res</span></li>
-			<li><span id="btn05">JQuery</span></li>
-			<li><span id="btn06">Mobile</span></li>
-			<li><span id="btn07">potfolio</span></li>
-			<li><span id="btn08">Contact</span></li>
+			<li class="active"><span id="btn01"></span></li>
+			<li><span id="btn02"></span></li>
+			<li><span id="btn03"></span></li>
+			<li><span id="btn04"></span></li>
+			<li><span id="btn05"></span></li>
+			<li><span id="btn06"></span></li>
+			<!-- <li><span id="btn07"></span></li> -->
+			<!-- <li><span id="btn08"></span></li> -->
 		</ul>
 	</div>
 </body>
@@ -483,6 +608,67 @@
 		document.querySelector("#gagreenBox").style.display = "block";
 		document.querySelector("#genesisBox").style.display = "none";
 	})
+
+
+	document.querySelector("#etudeBtn").addEventListener("click",(e)=>{
+		let changeImg1 = document.querySelector("#change_lush_pc");
+		changeImg1.src = "images/etude_main.png";
+		let changeImg2 = document.querySelector("#change_lush_mo");
+		changeImg2.src = "images/etude_mobile_main.png";
+		let changeImg3 = document.querySelector("#change_lush_ta");
+		changeImg3.src = "images/etude_tablet_main.png";
+
+		document.querySelector("#lushBtn").style.borderBottom = "0px";
+		document.querySelector("#lushBtn").style.fontWeight = "400";
+		e.target.style.borderBottom = "3px solid #ef426f";
+		e.target.style.fontWeight = "900"; 
+		document.querySelector("#lushBox").style.display = "none";
+		document.querySelector("#etudeBox").style.display = "block";
+		
+	})
+	
+	document.querySelector("#lushBtn").addEventListener("click",(e)=>{
+		let changeImg1 = document.querySelector("#change_lush_pc");
+		changeImg1.src = "images/lush_pc_main.png";
+		let changeImg2 = document.querySelector("#change_lush_mo");
+		changeImg2.src = "images/lush_mobile_main.png";
+		let changeImg3 = document.querySelector("#change_lush_ta");
+		changeImg3.src = "images/lush_tablet_main.png";
+
+		document.querySelector("#etudeBtn").style.borderBottom = "0px";
+		document.querySelector("#etudeBtn").style.fontWeight = "400";
+		e.target.style.borderBottom = "3px solid #82cbc4";
+		e.target.style.fontWeight = "900";
+		document.querySelector("#lushBox").style.display = "block";
+		document.querySelector("#etudeBox").style.display = "none";
+	})
+
+
+	document.querySelector("#yemomileBtn").addEventListener("click",(e)=>{
+		let changeImg2 = document.querySelector("#change_lush_mo");
+		changeImg2.src = "images/etude_mobile_main.png";
+
+		document.querySelector("#projectBtn").style.borderBottom = "0px";
+		document.querySelector("#projectBtn").style.fontWeight = "400";
+		e.target.style.borderBottom = "3px solid #63b79d";
+		e.target.style.fontWeight = "900"; 
+		document.querySelector("#projectBox").style.display = "none";
+		document.querySelector("#yemomileBox").style.display = "block";
+		
+	})
+	
+	document.querySelector("#projectBtn").addEventListener("click",(e)=>{
+		let changeImg2 = document.querySelector("#change_lush_mo");
+		changeImg2.src = "images/lush_mobile_main.png";
+
+		document.querySelector("#yemomileBtn").style.borderBottom = "0px";
+		document.querySelector("#yemomileBtn").style.fontWeight = "400";
+		e.target.style.borderBottom = "3px solid #9e8b60";
+		e.target.style.fontWeight = "900";
+		document.querySelector("#projectBox").style.display = "block";
+		document.querySelector("#yemomileBox").style.display = "none";
+	})
+
 
 </script>
 

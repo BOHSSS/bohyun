@@ -169,6 +169,7 @@ body {
 	font-size: 18px;
 	letter-spacing: 5px;
 	line-height: 18px;
+	color: #333333;
 }
 
 #frame .left .menu_list ul.main li a .slider {
@@ -774,15 +775,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 .profile_contents {
 	height: 800px;
 	background-color: #f1f1f1;
@@ -1040,7 +1032,7 @@ body {
 		align-content: center;
 		justify-content: center;	
 	}
-		.container ul.tabs  li.tab1{
+		#genesisBtn{
 			width: 120px;
 			line-height: 50px;
 			text-align: center;
@@ -1048,13 +1040,14 @@ body {
 			cursor: pointer;
 			margin-right: 10px;
 		}
-		.container ul.tabs  li.tab2{
+		#gagreenBtn{
 			width: 120px;
 			line-height: 50px;
 			text-align: center;
 			cursor: pointer;
 		}
 
+		
 	#css_box_wrap{
 		width: 1400px;
 		height: 450px;
@@ -1066,17 +1059,14 @@ body {
 	}
 		#css_box_wrap .css_text{
 			width: 30%;
-			background-color:rgba(134, 51, 51, 0.1);
-
-		}
-		#gagreenBox{
-			display: none;
 		}
 			#css_box_wrap .css_text h2{
 				font-size: 60px;
 				position: relative;
 				top: -85px;
 				left: 20px;
+				font-style: italic;
+				color: #1d1d1d;
 			}
 			#css_box_wrap .css_text_cont{
 				width: 400px;
@@ -1084,29 +1074,61 @@ body {
 				margin-left: 30px;
 				margin-top: -50px;
 			}
-				.css_text_cont h3{
-					color: #a23333;
-				}
 				.css_text_cont div{
 					margin-top: 15px;
 				}
-					.css_text_cont .sitemap_wrap .sitemap_box{ 
+					.sitemap_wrap .sitemap_box{ 
 						float: left;
 						border: 1px solid #1d1d1d;
 						padding: 3px 10px 3px 10px;
 						margin-right: 10px;
 					}
-					.css_text_cont .more{
-						width: fit-content; 
-						margin-top: 70px;
-						border-bottom: 3px solid #a23333;
-					}
-						.css_text_cont .more a{
-							color: #000;
+						.sitemap_box a{
+							color: #000000;
 						}
+				.css_text_cont .more{
+					width: fit-content; 
+					margin-top: 70px;
+				}
+					.css_text_cont .more a{
+						color: #000;
+					}
+
+		#genesisBox{
+			background-color:rgba(134, 51, 51, 0.1);
+		}
+			#genesisBox h2 span{
+				color: #a23333;
+			}	
+			#genesisBox h3{
+				color: #a23333;
+			}	
+				#genesisBox .sitemap_box:hover{
+					background-color: rgba(134, 51, 51, 0.3);
+				}
+				#genesisBox .more:hover{
+					border-bottom: 2px solid #a23333;
+				}	
+		#gagreenBox{
+			display: none;
+			background-color:rgba(56, 116, 113, 0.1);
+		}
+			#gagreenBox h2 span{
+				color: #5e9496;
+			}	
+			#gagreenBox h3{
+				color: #5e9496;
+			}	
+				#gagreenBox .sitemap_box:hover{
+					background-color: rgba(56, 116, 113, 0.3);
+				}
+				#gagreenBox .more:hover{
+					border-bottom: 2px solid #5e9496;
+				}	
+					
+		
 		#css_box_wrap .device{
 			width: 70%;
-			background-color:rgba(134, 51, 51, 0.1);
 		}
 		
 
@@ -1118,9 +1140,25 @@ body {
 	background: url(../images/res_background.jpg) no-repeat;
 	background-size: cover;
 }
+#etudeBtn{
+	width: 120px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 3px solid #ef426f;
+	cursor: pointer;
+	margin-right: 10px;
+	z-index: 1000;
+}
+#lushBtn{
+	width: 120px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 1000;
+}
 	#res_box_wrap{
 		width: 1400px;
-		height: 500px;
+		height: 450px;
 		margin: 0 auto;
 		position: relative;
 		top: 250px;
@@ -1129,31 +1167,125 @@ body {
 	}
 		#res_box_wrap .res_text{
 			width: 30%;
-			background-color:#ffeae5;
 
 		}
 			#res_box_wrap .res_text h2{
-				font-size: 70px;
+				font-size: 60px;
 				position: relative;
-				top:-100px;
+				top: -85px;
 				left: 20px;
+				font-style: italic;
+				color: #1d1d1d;
 			}
-				
+			#res_box_wrap .res_text_cont{
+				width: 400px;
+				height: 100%;
+				margin-left: 30px;
+				margin-top: -50px;
+			}
+				.res_text_cont div{
+					margin-top: 15px;
+				}
+					.sitemap_wrap .sitemap_box{ 
+						float: left;
+						border: 1px solid #1d1d1d;
+						padding: 3px 10px 3px 10px;
+						margin-right: 10px;
+					}
+						.sitemap_box a{
+							color: #000000;
+						}
+				.res_text_cont .more{
+					width: fit-content; 
+					margin-top: 70px;
+				}
+					.res_text_cont .more a{
+						color: #000;
+					}
+
+		#etudeBox{
+			background-color:rgba(230, 140, 182, 0.1);
+		}
+			#etudeBox h2 span{
+				color: #da6987;
+			}	
+			#etudeBox h3{
+				color: #da6987;
+			}	
+				#etudeBox .sitemap_box:hover{
+					background-color: rgba(134, 51, 51, 0.3);
+				}
+				#etudeBox .more:hover{
+					border-bottom: 2px solid #da6987;
+				}	
+		#lushBox{
+			display: none;
+			background-color:rgba(56, 116, 113, 0.1);
+		}
+			#lushBox h2 span{
+				color: #55a6ce;
+			}	
+			#lushBox h3{
+				color: #55a6ce;
+			}	
+				#lushBox .sitemap_box:hover{
+					background-color: rgba(56, 116, 113, 0.3);
+				}
+				#lushBox .more:hover{
+					border-bottom: 2px solid #55a6ce;
+				}	
+					
+		
 		#res_box_wrap .device{
 			width: 70%;
-			background-color:#ffeae5;
-
 		}
+
+
+
 /*page4 jquery*/
 #jQuery {
 	width: 100%;
 	height: 1000px;
 	position: relative;
-	background: #ffffff;
+	background: url(../images/mobile_background.jpg) no-repeat;
+	background-size: cover;
 }
+.container {
+    width: 100%;
+    position: relative;
+}
+	.container ul.tabs{
+		width: 1400px;
+		height: 50px;
+		position: absolute;
+		top: 790px;
+		left: 250px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;	
+	}
+		#yemomileBtn{
+			width: 120px;
+			line-height: 50px;
+			text-align: center;
+			border-bottom: 3px solid #63b79d;
+			cursor: pointer;
+			margin-right: 10px;
+			z-index: 1001;
+		}
+		#projectBtn{
+			width: 120px;
+			line-height: 50px;
+			text-align: center;
+			cursor: pointer;
+			z-index: 1001;
+		}
+
+		
 	#jquery_box_wrap{
 		width: 1400px;
-		height: 560px;
+		height: 450px;
 		margin: 0 auto;
 		position: relative;
 		top: 250px;
@@ -1162,27 +1294,110 @@ body {
 	}
 		#jquery_box_wrap .jquery_text{
 			width: 30%;
-			background-color:rgba(134, 51, 51, 0.1);
-
+			margin-left: 200px;
 		}
 			#jquery_box_wrap .jquery_text h2{
-				font-size: 70px;
+				font-size: 60px;
 				position: relative;
-				top:-100px;
+				top: -85px;
 				left: 20px;
+				font-style: italic;
+				color: #1d1d1d;
 			}
+			#jquery_box_wrap .jquery_text_cont{
+				width: 400px;
+				height: 100%;
+				margin-left: 30px;
+				margin-top: -50px;
+			}
+				.jquery_text_cont div{
+					margin-top: 15px;
+				}
+					.sitemap_wrap .sitemap_box{ 
+						float: left;
+						border: 1px solid #1d1d1d;
+						padding: 3px 10px 3px 10px;
+						margin-right: 10px;
+					}
+						.sitemap_box a{
+							color: #000000;
+						}
+				.jquery_text_cont .more{
+					width: fit-content; 
+					margin-top: 70px;
+				}
+					.jquery_text_cont .more a{
+						color: #000;
+					}
+
+		#yemomileBox{
+			background-color:rgba(130, 236, 201, 0.1);
+		}
+			#yemomileBox h2 span{
+				color: #63b79d;
+			}	
+			#yemomileBox h3{
+				color: #63b79d;
+			}	
+				#yemomileBox .sitemap_box:hover{
+					background-color: rgba(146, 211, 197, 0.3);
+				}
+				#yemomileBox .more:hover{
+					border-bottom: 2px solid #63b79d;
+				}	
+		#projectBox{
+			display: none;
+			background-color:rgba(151, 145, 107, 0.1);
+		}
+			#projectBox h2 span{
+				color: #9e8b60;
+			}	
+			#projectBox h3{
+				color: #9e8b60;
+			}	
+				#projectBox .sitemap_box:hover{
+					background-color: rgba(56, 116, 113, 0.3);
+				}
+				#projectBox .more:hover{
+					border-bottom: 2px solid #9e8b60;
+				}	
 		#jquery_box_wrap .device{
 			width: 70%;
-			background-color:rgba(134, 51, 51, 0.1);
+		}	
 
+		/*모바일 크기*/
+		.jquery_device .mobile_device img{
+			position: relative;
+			width: 600px;
+			top: -100px;
+			right: 0px;
+			z-index: 100;
 		}
-		
 
+		.jquery_device .mobile_main_page{
+			position: absolute;
+			width: 249px;
+			height: 497px;
+			top: -49px;
+			right: 363px;
+			z-index: 101;
+			overflow: hidden;
+		}
+			.jquery_device .mobile_main_page a{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+				.jquery_device .mobile_main_page a img{
+					width: 249px;
+					position: absolute;
+				}
 #potfolio {
 	width: 100%;
 	height: 1000px;
 	position: relative;
-	background: #ffffff;
+	background: url(../images/contact_background.jpg) no-repeat;
+	background-size: cover;
 }
 
 #contact {
